@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
+		<title>footer</title>
+		<script>
+			// H5 plus事件处理
+			function plusReady(){
+				var workHead = plus.webview.create("header.html", "platform_head", {
+						top: "0px",
+						bottom: "50px",
+						scrollIndicator: 'vertical'
+					});
+					workHead.addEventListener("loaded", function() { //叶面加载完成后才显示
+						 plus.webview.currentWebview().append(workHead);
+					}, false);
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener("plusready",plusReady,false);
+			}
+		</script>
+	</head>
+
+	<body>
+		<footer class="footer clearfix">
+			<span class="current"><i class="icon icon-home"></i>理财室</span>
+			<span><i class="icon icon-friend"></i>同行好友</span>
+			<span><i class="icon icon-plus"></i></span>
+			<span><i class="icon icon-friends"></i>客户好友</span>
+			<span><i class="icon icon-msg"></i>消息提醒</span>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
+		<title>理财室-在售中</title> 
+		<script>
+			// H5 plus事件处理
+			function plusReady(){
+				var main = plus.webview.create("licaishi_now.html", "platform_head", {
+						top: "50px",
+						bottom: "0px",
+						scrollIndicator: 'vertical'
+					});
+					main.addEventListener("loaded", function() { //叶面加载完成后才显示
+						 plus.webview.currentWebview().append(main);
+					}, false);
+			}
+			if(window.plus){
+				plusReady();
+			}else{
+				document.addEventListener("plusready",plusReady,false);
+			}
+		</script>
+	</head>
+	<body>
+		<header class="header clearfix">
+			<span class="icon icon-userB floatleft"></span>
+			<ul class="nav font13 aligncenter clearfix">
+				<li class="current">在售中</li>
+				<li>收藏夹</li>
+				<li>已下架</li>
+			</ul>
+			<span class="icon icon-more floatright"></span>
+		</header>
+	</body>
+</html>
