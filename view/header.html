@@ -17,7 +17,21 @@
 					});
 					main.addEventListener("loaded", function() { //叶面加载完成后才显示
 						 plus.webview.currentWebview().append(main);
-					}, false);
+				}, false);
+				main.setPullToRefresh({support:true,
+					height:"50px",
+					range:"200px",
+					contentdown:{
+						caption:"下拉可以刷新"
+					},
+					contentover:{
+						caption:"释放立即刷新"
+					},
+					contentrefresh:{
+						caption:"正在刷新..."
+					}
+				},onRefresh);
+				plus.nativeUI.toast("下拉可以刷新");
 			}
 			if(window.plus){
 				plusReady();

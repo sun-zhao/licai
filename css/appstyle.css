@@ -105,15 +105,9 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .clear{clear:both;line-height:0;height:0;font-size:0;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{zoom:1}
-<<<<<<< Updated upstream
+.color-3{color:#333;}
 .color-6{color:#666;}
-=======
-<<<<<<< HEAD
-
-=======
-.color-6{color:#666;}
->>>>>>> origin/master
->>>>>>> Stashed changes
+.color-9{color:#999;}
 .btn{display: block;text-align: center;}
 /*图标*/
 .icon{display:inline-block;font-size:0;line-height:0;background-repeat: no-repeat;background-position:center center;}
@@ -131,7 +125,6 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .icon-plus{background-image: url(../img/icon-plus.png);border:3px solid #eee6fd;border-radius:50%;background-color: #633eb0;}
 .icon-3,.icon-4{width:14px;height:14px;background-image:url(../img/icon-3.png);background-size:100%;}
 .icon-4{background-image:url(../img/icon-4.png);}
-<<<<<<< Updated upstream
 .icon-arrow-t{width:14px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-10px;left:10px;background-size:100%;}
 .icon-arrow-t{width:11px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-9.5px;left:10px;background-size:100%;}
 .icon-eye{background-image:url(../img/icon-eye.png);}
