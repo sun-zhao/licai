@@ -109,6 +109,18 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .color-6{color:#666;}
 .color-9{color:#999;}
 .btn{display: block;text-align: center;}
+@font-face {
+    font-family: 'impact';
+    src: url('impact-webfont.eot');
+    src: url('impact-webfont.eot?#iefix') format('embedded-opentype'),
+         url('impact-webfont.woff2') format('woff2'),
+         url('impact-webfont.woff') format('woff'),
+         url('Impact.ttf') format('truetype'),
+         url('impact-webfont.svg#impact_label_reversedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*图标*/
 .icon{display:inline-block;font-size:0;line-height:0;background-repeat: no-repeat;background-position:center center;}
 .icon-1,.icon-2{width:40px;height:40px;background-color:#fff;background-image:url(../img/icon-1.png);background-size:65%;}
@@ -125,12 +137,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .icon-plus{background-image: url(../img/icon-plus.png);border:3px solid #eee6fd;border-radius:50%;background-color: #633eb0;}
 .icon-3,.icon-4{width:14px;height:14px;background-image:url(../img/icon-3.png);background-size:100%;}
 .icon-4{background-image:url(../img/icon-4.png);}
-.icon-arrow-t{width:14px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-10px;left:10px;background-size:100%;}
 .icon-arrow-t{width:11px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-9.5px;left:10px;background-size:100%;}
-.icon-eye{background-image:url(../img/icon-eye.png);}
-.icon-change{background-image:url(../img/icon-change.png);}
-.icon-arrow-t{width:14px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-10px;left:10px;background-size:100%;}
-
+.icon-eye{background-image:url(../img/icon-eye.png);background-size:14px;}
+.icon-change{background-image:url(../img/icon-change.png);background-size:14px;}
+.icon-comment{width:50px;height:40px;background-image: url(../img/icon-msg.png);background-size:25px;}
 
 /*启动登陆注册页面*/
 .begin{height:100%;background: url(../img/pageone.jpg);background-size:100% auto;}
@@ -186,14 +196,19 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .userInfo .floatright p .icon{margin-bottom:-2px;}
 .signature{height:28px;line-height:28px;position:relative;border:1px solid #d9d9d9;border-radius:30px;margin:0 10px;text-indent:10px;background:#fff;}
 .cardBox{margin:5px;}
-.oneCard{background:#fff;border:1px solid #d6d6d6;border-bottom:1px solid #a7a7a7;border-radius:3px;min-height:100px;position: relative;}
+.oneCard{background:#fff;border:1px solid #d6d6d6;border-bottom:1px solid #a7a7a7;border-radius:3px;min-height:100px;position: relative;margin-bottom:5px;}
 .oneCard .title{height:20px;line-height:20px;padding:5px 10px;}
 .tips,.tip,.tipsBig{display:inline-block;height:20px;line-height:22px;margin-left:-11px;background:#fc7864;color:#fff;padding:0 10px 0 7px;border-radius:2px 20px 20px 2px;}
+.tips-j{background:#febf0f;}
+.tips-x{background:#16c1f3;}
 .oneCard em{color:#9c66ab;padding-left:5px;}
 .tip{height:17px;line-height:18px;padding:0 6px;color:#633eb0;border:1px solid #633eb0;border-radius:3px;background:#fff;margin-left:10px;position:relative;top:-1px;}
-.tipsBig{height:40px;line-height:40px;border-radius:30px 2px 2px 30px;margin:0 -12px 0 0;padding-left:24px;font-family: impact;}
-.cardBottom{border-top:1px solid #dadada;height:35px;line-height:35px;}
-.cardBottom i.icon{width:40px;height:35px;background-size:20px;}
+.tip-over{border-color:#aaa;color:#999;}
+.tipsBig{height:40px;line-height:40px;border-radius:30px 2px 2px 30px;margin:0 -12px 0 0;padding-left:24px;font-family:'impact';}
+.cardBottom{border-top:1px solid #dadada;height:35px;}
+.cardBottom span{display:inline-block;height:35px;line-height:35px;}
+.cardBottom span em{padding:0;margin-left:-5px;}
+.cardBottom i.icon{width:40px;height:35px;}
 
 
 
