@@ -121,6 +121,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
     font-style: normal;
 
 }
+.blur{background: inherit;-webkit-filter: blur(5px);overflow: hidden;}
 /*图标*/
 .icon{display:inline-block;font-size:0;line-height:0;background-repeat: no-repeat;background-position:center center;}
 .icon-1,.icon-2{width:40px;height:40px;background-color:#fff;background-image:url(../img/icon-1.png);background-size:65%;}
@@ -183,8 +184,8 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .footer{height:49px;border-top:1px solid #b2b2b2;position: fixed;width:100%;left:0;bottom:0;background-color:#f6f6f6;}
 .footer span{display:inline-block;width:20%;height:44px;padding-top:5px;font-size:10px;text-align: center;float: left;}
 .footer span i.icon{display:block;width:25px;height:25px;margin:0 auto;background-size:100%;}
-.footer span i.icon.icon-plus{width:38px;height:38px;background-size:70%;margin-top:-2px;}
-.footer span i.icon.icon-plus{width:38px;height:38px;background-size:70%;margin-top:-3px;}
+.footer span i.icon.icon-plus{width:38px;height:38px;background-size:70%;margin-top:-2px;-webkit-transition:0.2s;}
+.footer span.current i.icon.icon-plus{border-color:#feeded;background-color:#db5252;-webkit-transform:rotate(45deg);-webkit-transition:0.2s;}
 .personBoard{background:#f9f9f9;border-bottom:1px solid #b2b2b2;padding-bottom:10px;overflow: hidden;margin-top:-30%;}
 .topImg {position: relative;}
 .topImg img{width:100%;}
@@ -209,6 +210,31 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .cardBottom span{display:inline-block;height:35px;line-height:35px;}
 .cardBottom span em{padding:0;margin-left:-5px;}
 .cardBottom i.icon{width:40px;height:35px;}
+.bottomPop{width:100%;height:99px;border-top:1px solid #d9d9d9;position:fixed;bottom:0;left:0;z-index:20;background: #e9e5d8;}
+.popBtn{display:inline-block;margin:0 10%;margin-top:15px;}
+.popBtn .icon{display:block;width:50px;height:50px;border-radius:50%;margin-bottom:3px;}
+.icon-plus-big{background-color:#16c1f3;background-image: url(../img/icon-plus.png);background-size:30px;}
+.icon-6{background-color:#a777b5;background-image: url(../img/icon-6.png);background-size:28px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
