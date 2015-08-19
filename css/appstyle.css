@@ -37,6 +37,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .nomarl{margin-left:0!important;}
 .nomarr{margin-right:0!important;}
 .noboder{border:0!important;}
+.mart-1{margin-top:-1px;}
 .mart5{margin-top:5px!important;}
 .mart10{margin-top:10px!important;}
 .mart15{margin-top:15px!important;}
@@ -58,8 +59,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .marl60{margin-left:60px!important;}
 .color-black{color:#000;}
 .color-a{color:#aaa!important;}
+.color-b{color:#bbb!important;}
 .color-3{color:#333!important;}
 .color-6{color:#666!important;}
+.color-8{color:#888!important;}
 .color-9{color:#999!important;}
 .color-white{color:#fff!important;}
 .floatleft{float: left;}
@@ -129,9 +132,10 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .icon-2{background-image:url(../img/icon-2.png);}
 .icon-clear{width:20px;height:20px;position:absolute;background-image:url(../img/clear.png);background-size:65%;}
 .icon-back{height:49px;width:50px;position:absolute;top:0;left:0;background-image: url(../img/icon-back.png);background-size:45%;}
-.icon-userB,.icon-more,.icon-link{width:50px;height:49px;background-image: url(../img/icon-user.png);background-size:25px;background-position:15.5px center;}
+.icon-userB,.icon-more,.icon-link,.icon-addf{width:50px;height:49px;background-image: url(../img/icon-user.png);background-size:25px;background-position:15.5px center;}
 .icon-more,..icon-link{background-image: url(../img/icon-more.png);background-position:10.5px center;}
 .icon-link{background-image: url(../img/icon-link.png);background-size:50%;}
+.icon-addf{background-image: url(../img/icon-add.png);background-size:55%;}
 .icon-home{background-image: url(../img/icon-home.png);}
 .current .icon-home{background-image: url(../img/icon-home-h.png);}
 .icon-friend{background-image: url(../img/icon-3-big.png);}
@@ -158,6 +162,10 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .icon-con{background-image: url(../img/icon-msg1.png);}
 .icon-zan{background-image: url(../img/icon-hand.png);}
 .current .icon-zan{background-image: url(../img/icon-hand2.png);transition:0.3s;-webkit-transition:0.3s;}
+.icon-phone,.icon-clock{width:40px;height:40px;background-image: url(../img/icon-phone.png);background-size:55%;margin-top:4px;}
+.icon-clock{background-image: url(../img/icon-clock.png);margin-top:3px;}
+
+
 /*启动登陆注册页面*/
 .begin{height:100%;background: url(../img/pageone.jpg);background-size:100% auto;}
 .logo,.logo img{width:200px;}
@@ -184,7 +192,7 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .inputList{border:1px solid #d9d9d9;border-width:1px 0;padding-left:10px;background:#fff;}
 .inputList li{min-height:45px;line-height: 45px;border-bottom:1px solid #d9d9d9;position: relative;}
 .inputList li:last-child{border:0;}
-.inputList li span.lable{line-height: 45px;color:#2a2a2a;font-size:16px;}
+.inputList li span.lable{display:inline-block;height: 45px;line-height: 47px;color:#2a2a2a;font-size:16px;}
 .inputList li input,.inputList li .placeTxt{width:68%;height:45px;line-height:45px;font-size:14px;float: right;margin-right:15px;color:#8d8d8d;}
 .inputList li .placeTxt{width:60%;background: url(../img/arrow-r.png) right center no-repeat;background-size:8px;padding-right:20px;}
 .btnBottom{width:100%;background:#16c1f3;height:50px;line-height:50px;color:#fff;position:absolute;bottom:0;}
@@ -194,6 +202,10 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .imgList {padding:10px 0;}
 .imgList li{width:100%;overflow:hidden;overflow-x: auto;}
 .imgList img{width:40%;float: left;margin:0 5px;}
+.ulBg{}
+.ulBg li{height:45px;background: url(../img/arrow-r.png) 95% center no-repeat;background-size:8px;}
+.addBtn{height:24px;line-height:24px;font-size:12px;border:1px solid #1db3df;background:#16c1f3;border-radius:2px;color:#fff;padding:0 10px;position: absolute;right:15px;top:24px;}
+
 
 /*理财室*/
 .nav{width:65%;margin:0 auto;padding-top:10px;position: absolute;left:50%;margin-left:-31.5%;}
@@ -258,6 +270,7 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .friend_list .personBoard .floatleft p:nth-child(2){margin-top:6px;}
 .friend_list .personBoard .signature{background:#f6f6f6;border:0;margin-left:0;}
 .friend_list .personBoard .signature .icon-arrow-t{background-image: url(../img/arrow-t2.png);}
+.friend_list  li{line-height: normal;}
 .commentTop{height:40px;line-height:40px;background-color:#eee;}
 .commentTop span{color:#888;line-height:20px;margin-left:10px;}
 .commentTop span.font14{color:#812990;line-height:40px;padding:0 10px;}
@@ -265,16 +278,19 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .feedList li{line-height:20px;padding:10px 0;}
 .feedList li .font17{color:#2a2a2a;}
 .feedList li .marl60 p:first-child{height:20px;line-height:20px;margin:5px 0 10px 0;}
+.feedList li p.txt_hidden{width:55%;}
 .searchBar{height:44px;background-color:#d9d9d9;padding:0 10px;border-bottom: 1px solid #b5b5b5;transition:0.3s;-webkit-transition:0.3s;}
 .searchBar input{width:100%;height:28px;border:0;background-color:#fff;border-radius:5px;margin-top:8px;text-align: center;
 background-image: url(../img/icon-ser.png);background-repeat: no-repeat;background-size:14px;background-position: 41% center;transition:0.3s;-webkit-transition:0.3s;}
+.searchBar input.langTxt{background-position:28% 8px;}
 .searchBar input.current{background-position:2% center;transition:0.3s;-webkit-transition:0.3s;text-align: left;text-indent:25px;}
-
-
-
-
-
-
-
-
+.wordCheck{position: fixed;right:-6px;top:80px;z-index: 10;}
+.wordCheck span{display: block;font-size:11px;color:#333;padding:0px 10px;margin-bottom:-5px;}
+.productSpan{height:18px;line-height:18px;border:1px solid #fc7764;border-radius:2px;color:#fc7764;}
+.productSpan em{display:inline-block;padding:0 5px;}
+.productSpan em:nth-child(2){background-color:#fc7764;color:#fff;}
+.productSpan2{border-color:#febf0f;color:#febf0f;}
+.productSpan2 em:nth-child(2){background-color:#febf0f;}
+.productSpan3{border-color:#16c2f4;color:#16c2f4;}
+.productSpan3 em:nth-child(2){background-color:#16c2f4;}
 
