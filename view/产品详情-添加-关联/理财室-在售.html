@@ -5,33 +5,45 @@
 		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
 		<meta name="apple-touch-fullscreen" content="yes"/>
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
-		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
-		<script type="text/javascript" src="../js/jquery.js" ></script>
-		<script type="text/javascript" src="../js/active.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../../css/appstyle.css">
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/active.js" ></script>
 		<title>理财室-在售中</title>
 		<script>
 			// H5 plus事件处理
 			function plusReady(){
-					ws=plus.webview.currentWebview();
-					ws.setBounce({position:{top:"100px"},changeoffset:{top:"44px"}});
+				ws=plus.webview.currentWebview();
+				ws.setBounce({position:{top:"100px"},changeoffset:{top:"44px"}});
+				ws.addEventListener("dragBounce",onPullStateChange,false);
 			}
 			if(window.plus){
 				plusReady();
 			}else{
 				document.addEventListener("plusready",plusReady,false);
 			}
+			$(window).scroll(function(){
+			    if($(window).scrollTop()==0){    //垂直滚动条钓offset 大于90时。
+			        $(".topImg").css({
+			           "width":1000,       //修改相关div样式
+			       });
+			    }else{
+			        $(".topImg").css({
+			           "width":0,       //修改相关div样式
+			       });
+			    }
+			});
 		</script>
 	</head>
-	<body>
+	<body class="Ios_scroll">
 		<div class="main">
 			<section class="personBoard">
 				<div class="topImg">
-					<img src="../img/2.jpg">
+					<img src="../../img/2.jpg">
 					<div class="imgMask"></div>
 				</div>
 				<div class="userInfo mart5 clearfix">
-					<span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
-					<div class="floatleft marl15 font13">
+					<span class="userPhoto floatleft"><img src="../../img/1.jpg"></span>
+					<div class="floatleft marl15 mart10 font13">
 						<p class="font17">Bruce Zhang</p>
 						<p>北京银行西城支行</p>
 						<p>工号：S179973689701</p>
