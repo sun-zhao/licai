@@ -5,56 +5,20 @@
 		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
 		<meta name="apple-touch-fullscreen" content="yes"/>
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
-		<link rel="stylesheet" type="text/css" href="../../css/appstyle.css">
-		<script type="text/javascript" src="../../js/jquery.js" ></script>
-		<script type="text/javascript" src="../../js/active.js" ></script>
+		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/active.js" ></script>
 		<title>理财室-在售中</title>
 		<script>
-			// H5 plus事件处理
-			function plusReady(){
-				ws=plus.webview.currentWebview();
-				ws.setBounce({position:{top:"100px"},changeoffset:{top:"44px"}});
-				ws.addEventListener("dragBounce",onPullStateChange,false);
-			}
-			if(window.plus){
-				plusReady();
-			}else{
-				document.addEventListener("plusready",plusReady,false);
-			}
-			$(window).scroll(function(){
-			    if($(window).scrollTop()==0){    //垂直滚动条钓offset 大于90时。
-			        $(".topImg").css({
-			           "width":1000,       //修改相关div样式
-			       });
-			    }else{
-			        $(".topImg").css({
-			           "width":0,       //修改相关div样式
-			       });
-			    }
-			});
 		</script>
 	</head>
 	<body class=" Ios_scroll">
+		<!--搜索begin-->
+		<div class="searchBar" style="margin-top:0;" title="默认不显示，下拉页面时候改margin-top为0显示出来，上滑的时候改成-45隐藏">
+			<input type="text" class="langTxt font14 " placeholder="编号/名称/预计年化/类别" title="当input foucs和不为空的时候加current">
+		</div>
+		<!--搜索over-->
 		<div class="main">
-			<section class="personBoard">
-				<div class="topImg">
-					<img src="../../img/2.jpg">
-					<div class="imgMask"></div>
-				</div>
-				<div class="userInfo mart5 clearfix">
-					<span class="userPhoto floatleft"><img src="../../img/1.jpg"></span>
-					<div class="floatleft marl15 mart10 font13">
-						<p class="font17">Bruce Zhang</p>
-						<p>北京银行西城支行</p>
-						<p>工号：S179973689701</p>
-					</div>
-					<div class="floatright mart15 alignright color-6">
-						<p class="current">168<i class="icon icon-3 marl5"></i></p>
-						<p>2882<i class="icon icon-4 marl5"></i></p>
-					</div>
-				</div>
-				<div class="signature mart5 font12 color-6"><i class="icon icon-arrow-t"></i>走路太骚会摔跤，得瑟过劲必闪腰</div>
-			</section>
 			<div class="cardBox">
 				<div class="oneCard">
 					<p class="font11 title color-a alignright">
