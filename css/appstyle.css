@@ -109,7 +109,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .inlineblock{display: inline-block;}
 .nobg{background:none!important;}
 .nobgimg{background-image:none!important;}
-.bgwhite{background:#fff;}
+.bgwhite{background:#fff!important;}
 .strong{font-weight: bold;}
 /*clear*/
 .clear{clear:both;line-height:0;height:0;font-size:0;}
@@ -390,12 +390,13 @@ p.txt{line-height:20px;padding-bottom:5px;}
 .wechat .inputList li div{margin-left:50px;}
 .wechat .inputList li div p{height:30px;line-height:30px;}
 .wechat li .addBtn{position:relative;right:0;top:0;margin-right:10px;}
-
-
-
-
-
-
+.sharePage{padding-bottom:70px;top:0;left:0;right:0;bottom:0;overflow:hidden;overflow-y: auto;}
+.shareBottom{width:100%;height:60px;line-height:30px;padding-bottom:10px;position: fixed;left:0;bottom:0;color:#fff;}
+.shareBottom .maskIn{background:#000;opacity: 0.8;position: absolute;width:100%;top:0;left:0;bottom:0;z-index:2;}
+.shareBottom div{text-indent:10px;position:relative;z-index:3;}
+.shareBottom div a{display: inline-block;border-radius:3px;color:#fff;background:#16c1f3;padding:0 15px;text-indent: 0}
+.shareBottom div:last-child a{background:#22ac38;}
+.shareBottom div:last-child {padding-right:10px;}
 
 
 
