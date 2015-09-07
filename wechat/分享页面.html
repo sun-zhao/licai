@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
+		<meta name="apple-touch-fullscreen" content="yes"/>
+		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
+		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<!--<script type="text/javascript" src="../js/active.js" ></script>-->
+		<title>产品详情</title>
+		<script type="text/javascript">
+			$(function(){
+                var topValue=0,// 上次滚动条到顶部的距离
+                    interval=null,// 定时器
+                    $sharePage = $('.sharePage'),
+                    $shareBottom = $('.shareBottom');
+                $sharePage.scroll(function(){
+                    if(interval==null) {
+						interval=setInterval(test,500);//这里就是判定时间，当前是1秒一判定
+						topValue=$sharePage.scrollTop;
+						$shareBottom.removeClass('current');
+                    }
+                });
+                function test(){
+                    // 判断此刻到顶部的距离是否和1秒前的距离相等
+                    if($sharePage.scrollTop==topValue){
+                        $shareBottom.addClass('current');
+                        clearInterval(interval);
+                        interval=null;
+                    }
+                }
+            });
+		</script>
+	</head>
+	<body class="shareBody">
+		<div class="main sharePage">
+			<section class="personBoard nomar-t bgwhite">
+				<div class="userInfo mart10 clearfix">
+					<span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
+					<div class="floatleft marl15 mart5 font13">
+						<p class="font17">Bruce Zhang</p>
+						<p>北京银行西城支行</p>
+						<p>工号：S179973689701</p>
+					</div>
+				</div>
+			</section>
+			<div class="oneCard detail mart10">
+				<div class="font11 title color-a alignright">
+					<span class="tips floatleft strong">理 财</span>
+					<span class="color-3 font17 strong txt_hidden" style="width:86%;">鑫晟财富2014004号集合资金信托计划</span>
+				</div>
+				<div class="clearfix mart5">
+					<span class="font14 floatleft inlineblock marl10 color-6">期限:<em class="color-6">35 - 365天</em></span>
+					<div class="floatright alignright marr10">
+						<p class="font11 color-a">预计年化率</p>
+						<span class="tipsBig font25 color-white">4.64 - 6.85<em class="font14 color-white">%</em></span>
+					</div>
+				</div>
+				<div class="cardBottom clearfix alignright mart10">
+					<span class="floatleft color-a marl10">1小时前更新</span>
+					<span class="clearfix "><i class="icon icon-eye floatleft"></i><em class="color-9 floatleft">1,2983</em></span>
+					<span class="clearfix marr10"><i class="icon icon-change floatleft"></i><em class="color-9 floatleft">823</em></span>
+				</div>
+			</div>
+			<ul class="inputList detail mart10">
+				<li class="clearfix">
+					<span class="lable">代码</span>
+					<span class="alignright placeTxt nobg nopadding">S79123102087096534</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">名称</span>
+					<span class="alignright placeTxt nobg nopadding txt_hidden" style="width:80%;">鑫盛财富2014004号集合资金信托计划</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">发行机构</span>
+					<span class="alignright placeTxt nobg nopadding">上海证券</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">收益类型</span>
+					<span class="alignright placeTxt nobg nopadding">股票型</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">起购金额</span>
+					<span class="alignright placeTxt nobg nopadding">1,000,000.00</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">募集起止日期</span>
+					<span class="alignright placeTxt nobg nopadding">2015-8-1  至  2015-10-1</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">计息天数</span>
+					<span class="alignright placeTxt nobg nopadding">100</span>
+				</li>
+				<li class="clearfix">
+					<span class="lable">预期收益率</span>
+					<span class="alignright placeTxt nobg nopadding">6.25%</span>
+				</li>
+			</ul>
+			<ul class="inputList mart10">
+				<li class="clearfix noboder">
+					<span class="lable">产品描述</span>
+					<p class="font15 txt">述我是个描述我是个描述我是个描述我是个描述我是个描述我是个描述</p>
+				</li>
+			</ul>
+		</div>
+		<!--分享底部begin-->
+		<div class="shareBottom current">
+			<div class="maskIn"></div>
+			<div class="floatleft">
+				<p>我是理财师</p>
+				<p><a href="#">下载如意门</a></p>
+			</div>
+			<div class="floatright">
+				<p>我是投资人</p>
+				<p><a href="#">+关注公众号</a></p>
+			</div>
+		</div>
+		<!--分享底部over-->
+	</body>
+</html>
