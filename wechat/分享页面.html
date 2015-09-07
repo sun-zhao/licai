@@ -7,11 +7,34 @@
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
 		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
 		<script type="text/javascript" src="../js/jquery.js" ></script>
-		<script type="text/javascript" src="../js/active.js" ></script>
+		<!--<script type="text/javascript" src="../js/active.js" ></script>-->
 		<title>产品详情</title>
+		<script type="text/javascript">
+			$(function(){
+                var topValue=0,// 上次滚动条到顶部的距离
+                    interval=null,// 定时器
+                    $sharePage = $('.sharePage'),
+                    $shareBottom = $('.shareBottom');
+                $sharePage.scroll(function(){
+                    if(interval==null) {
+						interval=setInterval(test,500);//这里就是判定时间，当前是1秒一判定
+						topValue=$sharePage.scrollTop;
+						$shareBottom.removeClass('current');
+                    }
+                });
+                function test(){
+                    // 判断此刻到顶部的距离是否和1秒前的距离相等
+                    if($sharePage.scrollTop==topValue){
+                        $shareBottom.addClass('current');
+                        clearInterval(interval);
+                        interval=null;
+                    }
+                }
+            });
+		</script>
 	</head>
-	<body class="">
-		<div class="main sharePage Ios_scroll">
+	<body class="shareBody">
+		<div class="main sharePage">
 			<section class="personBoard nomar-t bgwhite">
 				<div class="userInfo mart10 clearfix">
 					<span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
@@ -82,7 +105,7 @@
 			</ul>
 		</div>
 		<!--分享底部begin-->
-		<div class="shareBottom">
+		<div class="shareBottom current">
 			<div class="maskIn"></div>
 			<div class="floatleft">
 				<p>我是理财师</p>
