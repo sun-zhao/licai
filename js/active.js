@@ -5,7 +5,11 @@ $(document).ready(function(){
 		$bottomPop = $('#bottomPop'),
 		$window = $(window),
 		$document = $(document),
-		$searchBar = $('.searchBar');
+		$searchBar = $('.searchBar'),
+		$checkWord = $('.checkWord'),
+		$mask = $('.mask'),
+		$wordList = $('.wordList'),
+		$wordListSpan = $wordList.find('span');
 	//点击底部加号
 	$plus.off('touchstart').on('touchstart',function(){
 		var $this = $(this);
@@ -17,10 +21,39 @@ $(document).ready(function(){
 			$bottomPop.removeClass('current');
 		}
 	});
-	//下拉页面显示搜索框，上滑页面隐藏搜索框
-//	$(document).scroll(function(){
-//	    alert($(document).scrollTop());
-//	})
+	//点击选择字母
+	$checkWord.off('touchstart').on('touchstart',function(){
+		var $this = $(this);
+		if($this.hasClass('current')){
+			
+			$wordList.removeClass('current');
+			$mask.stop().fadeOut();
+		}else{
+			$this.addClass('current');
+			$mask.stop().fadeIn();
+			$wordList.addClass('current');
+		}if($this.hasClass('showWord')){
+			$mask.stop().fadeIn();
+			$wordList.addClass('current');
+		}
+		
+	});
+	$wordList.find('span').off('touchstart').on('touchstart',function(){
+		var $this = $(this);
+		$this.addClass('current');
+		setTimeout(function(){
+			$this.removeClass('current')
+		},200);
+		$checkWord.addClass('showWord').text($this.text());
+		setTimeout(function(){
+			$wordList.removeClass('current');	
+			$mask.stop().fadeOut();
+		},300);
+	});
+	
+	
+	
+	
 	var body = $('.main'),
 	    startX,
 	    startY;
