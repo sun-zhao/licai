@@ -25,14 +25,21 @@ $(document).ready(function(){
 	$checkWord.off('touchstart').on('touchstart',function(){
 		var $this = $(this);
 		if($this.hasClass('current')){
-			
-			$wordList.removeClass('current');
-			$mask.stop().fadeOut();
+			if($this.hasClass('showWord')){
+				$mask.stop().fadeIn();
+				if($wordList.hasClass('current')){
+					$wordList.removeClass('current');
+					$mask.stop().fadeOut();
+				}else{
+					$wordList.addClass('current');
+				}
+			}else{
+				$this.removeClass('current');
+				$wordList.removeClass('current');
+				$mask.stop().fadeOut();
+			}
 		}else{
 			$this.addClass('current');
-			$mask.stop().fadeIn();
-			$wordList.addClass('current');
-		}if($this.hasClass('showWord')){
 			$mask.stop().fadeIn();
 			$wordList.addClass('current');
 		}
@@ -50,7 +57,6 @@ $(document).ready(function(){
 			$mask.stop().fadeOut();
 		},300);
 	});
-	
 	
 	
 	

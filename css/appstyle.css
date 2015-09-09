@@ -405,6 +405,9 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .UserCard table th{color:#888888;font-size:13px;}
 .UserCard table th:last-child,.UserCard table td:last-child{border:0;}
 .icon-new{width:35px;height:35px;display: inline-block;position: absolute;background: url(../img/w-new.png);background-size:100%;left:-1px;top:-1px;}
+.rightBtn{display:inline-block;height:20px;line-height:20px;padding:0 5px;border:1px solid #ccc;color:#aaa;border-radius:3px;position:absolute;right:5px;top:5px;}
+.rightBtnAdd{border-color:#2a2a2a;width:40px;background:url(../img/icon-plus2.png) no-repeat center center;background-size:16px;}
+
 .wechat .inputList li div{margin-left:50px;}
 .wechat .inputList li div p{height:30px;line-height:30px;}
 .wechat li .addBtn{position:relative;right:0;top:0;margin-right:10px;}
