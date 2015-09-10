@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>产品管理-新建产品</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/adminstyle.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+<div class="content clearfix">
+    <!--left bar begin-->
+    <div class="leftBar">
+        <p><img src="../admin_img/logo.jpg" style="vertical-align: bottom"></p>
+        <ul class="leftNav font14">
+            <li><a href="#"><i class="icon icon-1"></i>管理角色</a></li>
+            <li><a href="#"><i class="icon icon-2"></i>权限管理</a></li>
+            <li><a href="#"><i class="icon icon-3"></i>用户管理</a></li>
+            <li><a href="#" class="current"><i class="icon icon-4"></i>产品管理</a></li>
+            <li><a href="#"><i class="icon icon-5"></i>短信管理</a></li>
+            <li><a href="#"><i class="icon icon-6"></i>评论管理</a></li>
+            <li><a href="#"><i class="icon icon-7"></i>机构管理</a></li>
+            <li><a href="#"><i class="icon icon-8"></i>数据统计</a></li>
+        </ul>
+    </div>
+    <!--left bar over-->
+    <!--right bar begin-->
+    <div class="rightBar">
+        <div class="topBar clearfix alignright">
+            <div class="searchBox marl20 floatleft"><input type="text" placeholder="智能搜索..."><a href="#" class="icon icon-ser nomar"></a></div>
+            <div class="inlineblock mart5"><span class="userPhoto"><img src="../admin_img/2.jpg" ></span>刘德华</div>
+            <a href="#" class="icon icon-out marr20 marl20"></a>
+        </div>
+        <div class="rightMain">
+            <div class="topNav clearfix alignright">
+                <a href="#" class="floatleft"><img src="../admin_img/back.jpg" ></a>
+                <span class="floatleft mart20 marl20">新建产品</span>
+                <a href="#" class="btn btn-fb marr20 mart10">发 布</a>
+            </div>
+            <div class="mainTop mart10 p-bt20">
+                <p class="font14">
+                    <span>请选择要添加的产品类型</span>
+                    <select class="selectInt marl20">
+                        <option>理财产品</option>
+                        <option>基金产品</option>
+                        <option>信托基金</option>
+                    </select>
+                </p>
+                <div class="mart20 clearfix">
+                    <span class="font14 floatleft">描述</span>
+                    <div class="textArea">
+                        <textarea></textarea>
+                        <div class="textBt alignright"><a href="#" class="btn marr10 mart5">使用图片</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mart20 marr20 marl20">
+                <table class="tableInt">
+                    <tr>
+                        <th>代码</th>
+                        <td>
+                            <div class="txtInt has-error">
+                                <input type="text">
+                                <label>请填写产品代码</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>名称</th>
+                        <td>
+                            <div class="txtInt width-300">
+                                <input type="text">
+                                <label>请填写产品代码</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>发行机构</th>
+                        <td>
+                            <select class="selectInt width-200">
+                                <option>中国银行</option>
+                                <option>华夏银行</option>
+                                <option>花旗银行</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>收益类型</th>
+                        <td>
+                            <select class="selectInt width-200">
+                                <option>股票型</option>
+                                <option>基金型</option>
+                                <option>信托基金</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>起购金额</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写起购金额</label>
+                            </div>
+                            <span class="marl10">元</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>募集期起止日期</th>
+                        <td>
+                            <div class="txtInt width-120">
+                                <input type="text">
+                                <i class="icon icon-canlder"></i>
+                            </div>
+                            <span class="marl10 marr10">至</span>
+                            <div class="txtInt width-120">
+                                <input type="text">
+                                <i class="icon icon-canlder"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>计息天数</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写计息天数</label>
+                            </div>
+                            <span class="marl10">天</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>预计收益率</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写预计收益率</label>
+                            </div>
+                            <span class="marl10">%</span>
+                        </td>
+                    </tr>
+                </table>
+                <p class="line"></p>
+                <table class="tableInt">
+                    <tr>
+                        <th>代码</th>
+                        <td>
+                            <div class="txtInt has-error">
+                                <input type="text">
+                                <label>请填写产品代码</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>名称</th>
+                        <td>
+                            <div class="txtInt width-300">
+                                <input type="text">
+                                <label>请填写产品代码</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>发行机构</th>
+                        <td>
+                            <select class="selectInt width-200">
+                                <option>中国银行</option>
+                                <option>华夏银行</option>
+                                <option>花旗银行</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>收益类型</th>
+                        <td>
+                            <select class="selectInt width-200">
+                                <option>股票型</option>
+                                <option>基金型</option>
+                                <option>信托基金</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>起购金额</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写起购金额</label>
+                            </div>
+                            <span class="marl10">元</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>募集期起止日期</th>
+                        <td>
+                            <div class="txtInt width-120">
+                                <input type="text">
+                                <i class="icon icon-canlder"></i>
+                            </div>
+                            <span class="marl10 marr10">至</span>
+                            <div class="txtInt width-120">
+                                <input type="text">
+                                <i class="icon icon-canlder"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>计息天数</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写计息天数</label>
+                            </div>
+                            <span class="marl10">天</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>预计收益率</th>
+                        <td>
+                            <div class="txtInt">
+                                <input type="text">
+                                <label>请填写预计收益率</label>
+                            </div>
+                            <span class="marl10">%</span>
+                        </td>
+                    </tr>
+                </table>
+                <p><a href="#" class="btn mart20">新建产品详情</a></p>
+            </div>
+        </div>
+    </div>
+    <!--right bar over-->
+    <div class="mask"></div>
+    <!--添加成功弹出begin-->
+    <div class="pop">
+        <div class="popInner">
+            <p class="font28 aligncenter success"><img src="../admin_img/ok.jpg"  class="marr10">发布成功！</p>
+            <p class="aligncenter color-a mart30">您的产品已成功发布，您可以到产品管理中查看</p>
+            <p class="line mart30"></p>
+            <p class="font16 clearfix">
+                <a href="#" class="btn btn-normal floatleft">返回产品管理</a>
+                <a href="#" class="btn btn-fb floatright">继续新建</a>
+            </p>
+        </div>
+    </div>
+    <!--添加成功弹出over-->
+</div>
+</body>
+</html>
