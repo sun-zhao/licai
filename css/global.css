@@ -2,7 +2,7 @@
 /* CSS Document */
 /*reset*/ 
 html{background: none repeat scroll 0 0;height: 100%;}
-body{position:relative;background: #fff;color:#333;height: 100%;overflow:hidden;}
+body{position:relative;background: #fff;color:#263137;height: 100%;overflow:hidden;}
 body, div, td,font,em{font-size:12px;line-height:1.2em;font-family:"Microsoft YaHei",Tahoma,Arial,"宋体","黑体";}
 body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd{margin: 0;padding: 0;}
 table{border-collapse: collapse;border-spacing: 0;}
@@ -66,6 +66,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .color-8,.color-8 a{color:#888;}
 .color-a{color:#aaa;}
 .info{color:#096db8;}
+.success{color:#22ac38;}
 
 /*width*/
 .width-40{width:40px!important;}
@@ -103,6 +104,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .font18{font-size:18px!important;}
 .font20{font-size:20px!important;}
 .font25{font-size:25px!important;}
+.font28{font-size:28px!important;}
 .font30{font-size:30px!important;}
 .l_th{text-decoration:line-through!important;}
 .txt_hidden{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;}
@@ -110,7 +112,7 @@ a:hover,.news-list li a:hover{text-decoration:none;}
 .clear{clear:both;line-height:0;height:0;font-size:0;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix{zoom:1;}
-.line{width: 100%;border-bottom: 1px solid;font-size: 0;line-height: 0;margin:30px 0;}
+.line{width: 100%;border-bottom: 1px solid #ccc;font-size: 0;line-height: 0;margin:20px 0;}
 /*分页*/
 .pagenation a{display: inline-block;min-width: 28px;height: 28px;line-height: 28px;color:#a0a0a0;border:1px solid #efefef;margin:0 2px;}
 .pagenation a:hover,.pagenation a.current{background-color:#7c8a96;color:#fff;}
@@ -139,7 +141,7 @@ a:hover .icon-8,a.current .icon-8{background-position: -25px -175px;}
 .icon-ser{background-position: 0 -225px;}
 .icon-ser:hover{background-position:-25px -225px;}
 .icon-out{background-position:0 -200px;}
-
+.icon-canlder{width:18px;height:15px;background: url("../admin_img/clander.jpg");position: absolute;top:50%;right:3px;margin:0;margin-top:-7px;cursor: pointer;}
 
 
 

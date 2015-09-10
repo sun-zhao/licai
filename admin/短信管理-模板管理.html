@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>短信管理-模板管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/adminstyle.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+<div class="content clearfix">
+    <!--left bar begin-->
+    <div class="leftBar">
+        <p><img src="../admin_img/logo.jpg" style="vertical-align: bottom"></p>
+        <ul class="leftNav font14">
+            <li><a href="#"><i class="icon icon-1"></i>管理角色</a></li>
+            <li><a href="#"><i class="icon icon-2"></i>权限管理</a></li>
+            <li><a href="#"><i class="icon icon-3"></i>用户管理</a></li>
+            <li><a href="#"><i class="icon icon-4"></i>产品管理</a></li>
+            <li><a href="#" class="current"><i class="icon icon-5"></i>短信管理</a></li>
+            <li><a href="#"><i class="icon icon-6"></i>评论管理</a></li>
+            <li><a href="#"><i class="icon icon-7"></i>机构管理</a></li>
+            <li><a href="#"><i class="icon icon-8"></i>数据统计</a></li>
+        </ul>
+    </div>
+    <!--left bar over-->
+    <!--right bar begin-->
+    <div class="rightBar">
+        <div class="topBar clearfix alignright">
+            <div class="searchBox marl20 floatleft"><input type="text" placeholder="智能搜索..."><a href="#" class="icon icon-ser nomar"></a></div>
+            <div class="inlineblock mart5"><span class="userPhoto"><img src="../admin_img/2.jpg" ></span>刘德华</div>
+            <a href="#" class="icon icon-out marr20 marl20"></a>
+        </div>
+        <div class="rightMain">
+            <div class="topNav clearfix alignright">
+                <a href="#" class="floatleft"><img src="../admin_img/back.jpg" ></a>
+                <span class="floatleft mart20 marl20">模板管理</span>
+                <a href="#" class="btn mart10 marr20">新增短信模板</a>
+            </div>
+            <table class="dataTable">
+                <thead>
+                    <tr>
+                        <th class="width-80"><div class="width-80">模板类别</div></th>
+                        <th><div>模板内容</div></th>
+                        <th class="width-250"><div>状态</div></th>
+                    </tr>
+                </thead>
+                <tbody title="这里的条数等于(rightMain.height()-150)/50">
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch">已启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch no">未启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch">已启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch no">未启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch">已启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div>推送模板</div></td>
+                        <td><div>汪峰，一个奠定了摇滚乐坛的半壁江山的传奇傻逼</div></td>
+                        <td>
+                            <div>
+                                <a href="#" class="btn btn-edit">编辑</a>
+                                <a href="#" class="btn btn-remove">删除</a>
+                                <a href="#" class="btn btn-switch no">未启用</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--分页器begin-->
+            <div class="pagenation aligncenter mart30 p-bt20">
+                <a href="javascript:;" class="page prev">首页</a>
+                <a href="javascript:;" class="page prev marr20">上一页</a>
+                <a href="#" class="current">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <span>......</span>
+                <a href="#" class="disabled">7</a>
+                <a href="#" class="disabled">8</a>
+                <a href="#" class="disabled">9</a>
+                <a href="#" class="disabled">100</a>
+                <a href="javascript:;" class="page next marl20">下一页</a>
+                <a href="javascript:;" class="page next">尾页</a>
+            </div>
+            <!--分页器over-->
+        </div>
+    </div>
+    <!--right bar over-->
+    <div class="mask"></div>
+    <!--新建模板弹出begin-->
+    <div class="pop popBig">
+        <div class="popInner nopadding">
+            <div class="topNav font14"><span class="marl20">新建模板</span></div>
+            <div class="mainTop mart10 noborder">
+                <table class="tableInt nobg">
+                    <tr>
+                        <th class="width-80">模版名称</th>
+                        <td>
+                            <div class="txtInt has-error width-350">
+                                <input type="text">
+                                <label>请填写模版名称</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="width-80" style="vertical-align: top;">短信内容</th>
+                        <td>
+                            <div class="textArea nomarl width-350">
+                                <textarea></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p class="font16 alignright marr20">
+                <a href="#" class="btn btn-normal marr20">取 消</a>
+                <a href="#" class="btn btn-fb marr20">保存模板</a>
+            </p>
+        </div>
+    </div>
+    <!--新建模板弹出over-->
+</div>
+</body>
+</html>
