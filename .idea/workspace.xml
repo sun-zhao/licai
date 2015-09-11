@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1edf22b-960e-4c0d-8412-3fdbab7f6078" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/adminstyle.css" afterPath="$PROJECT_DIR$/css/adminstyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/appstyle.css" afterPath="$PROJECT_DIR$/css/appstyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/新建短信.html" afterPath="$PROJECT_DIR$/admin/新建短信.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.json" afterPath="$PROJECT_DIR$/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品-step2.html" afterPath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品-step2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品.html" afterPath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品.html" />
     </list>
     <ignored path="licai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +42,7 @@
       <file leaf-file-name="新建短信.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/新建短信.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.77424026" vertical-offset="1015" max-vertical-offset="4860">
+            <state vertical-scroll-proportion="-1.1432706" vertical-offset="1270" max-vertical-offset="4860">
               <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -593,7 +594,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/新建短信.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.77424026" vertical-offset="1015" max-vertical-offset="4860">
+        <state vertical-scroll-proportion="-1.1432706" vertical-offset="1270" max-vertical-offset="4860">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
