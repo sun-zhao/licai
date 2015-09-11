@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>新建短信</title>
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/adminstyle.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var $checkAll = $('#checkAll'),
+                $checkMore = $('#checkMore'),
+                $remove = $('#remove'),
+                $oneUser = $('.oneUser'),
+                $check = $('.check');
+            $checkMore.click(function(){
+                var $this = $(this);
+                if($this.text()=="多选"){
+                    $this.text('取消');
+                    $oneUser.each(function(){
+                        $(this).addClass('current')
+                    });
+                }else{
+                    $this.text("多选");
+                    $checkAll.text("全选")
+                    $oneUser.each(function(){
+                        $(this).removeClass('current');
+                    });
+                    $check.each(function(){
+                        $(this).removeClass('current');
+                    });
+                }
+            });
+            $checkAll.click(function(){
+                var $this = $(this);
+                if($checkMore.text()=="取消"){
+                    if($this.text()=="全选"){
+                        $this.text("取消全选");
+                        $check.each(function(){
+                            $(this).addClass('current');
+                        });
+                    }else{
+                        $this.text("全选");
+                        $check.each(function(){
+                            $(this).removeClass('current');
+                        });
+                    }
+                }
+            });
+            $check.click(function(){
+                var $this = $(this);
+                var $size = $('.check','.userBox').size();
+                if($this.hasClass('current')){
+                    $this.removeClass('current');
+                    if($('.current','.oneUser').size() < $size){
+                        $checkAll.text("全选");
+                    }
+                }else{
+                    $this.addClass('current');
+                    if($('.current','.oneUser').size() == $size){
+                        $checkAll.text("取消全选");
+                    }
+                }
+            });
+            $remove.click(function(){
+                $('.current','.oneUser').parent('.oneUser').remove();
+
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="content clearfix">
+    <!--left bar begin-->
+    <div class="leftBar">
+        <p><img src="../admin_img/logo.jpg" style="vertical-align: bottom"></p>
+        <ul class="leftNav font14">
+            <li><a href="#"><i class="icon icon-1"></i>管理角色</a></li>
+            <li><a href="#"><i class="icon icon-2"></i>权限管理</a></li>
+            <li><a href="#"><i class="icon icon-3"></i>用户管理</a></li>
+            <li><a href="#"><i class="icon icon-4"></i>产品管理</a></li>
+            <li><a href="#" class="current"><i class="icon icon-5"></i>短信管理</a></li>
+            <li><a href="#"><i class="icon icon-6"></i>评论管理</a></li>
+            <li><a href="#"><i class="icon icon-7"></i>机构管理</a></li>
+            <li><a href="#"><i class="icon icon-8"></i>数据统计</a></li>
+        </ul>
+    </div>
+    <!--left bar over-->
+    <!--right bar begin-->
+    <div class="rightBar">
+        <div class="topBar clearfix alignright">
+            <div class="searchBox marl20 floatleft"><input type="text" placeholder="智能搜索..."><a href="#" class="icon icon-ser nomar"></a></div>
+            <div class="inlineblock mart5"><span class="userPhoto"><img src="../admin_img/2.jpg" ></span>刘德华</div>
+            <a href="#" class="icon icon-out marr20 marl20"></a>
+        </div>
+        <div class="rightMain">
+            <div class="MainLeft">
+                <div class="topNav clearfix alignright">
+                    <a href="#" class="floatleft"><img src="../admin_img/back.jpg" ></a>
+                    <span class="floatleft mart20 marl20">新建短信</span>
+                    <a href="#" class="btn mart10 marr20">发送短信</a>
+                </div>
+                <table class="tableInt nobg">
+                    <tr>
+                        <th class="width-80">短信模板</th>
+                        <td>
+                            <select class="selectInt width-200">
+                                <option>推送模板</option>
+                                <option>通知模板</option>
+                                <option>产品更新提醒模板</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="width-80" style="vertical-align: top;">短信内容</th>
+                        <td>
+                            <div class="textArea nomarl width-auto marr50">
+                                <textarea></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="width-80" style="vertical-align: top;">接收</th>
+                        <td>
+                            <div class="textArea nomarl width-auto marr50">
+                                <div class="userBox">
+                                    <div class="oneUser clearfix">
+                                        <span class="floatleft"><img src="../admin_img/2.jpg"></span>
+                                        <span class="marl10">村上春树的鸟</span>
+                                        <a href="javascript:;" class="delete">×</a>
+                                        <a href="javascript:;" class="check"><em></em></a>
+                                    </div>
+                                    <div class="oneUser clearfix">
+                                        <span class="floatleft"><img src="../img/3.jpg"></span>
+                                        <span class="marl10">村上的鸟</span>
+                                        <a href="javascript:;" class="delete">×</a>
+                                        <a href="javascript:;" class="check"><em></em></a>
+                                    </div>
+                                    <div class="oneUser clearfix">
+                                        <span class="floatleft"><img src="../img/4.jpg"></span>
+                                        <span class="marl10">村树</span>
+                                        <a href="javascript:;" class="delete">×</a>
+                                        <a href="javascript:;" class="check"><em></em></a>
+                                    </div>
+                                    <div class="oneUser clearfix">
+                                        <span class="floatleft"><img src="../img/4.jpg"></span>
+                                        <span class="marl10">村上树</span>
+                                        <a href="javascript:;" class="delete">×</a>
+                                        <a href="javascript:;" class="check"><em></em></a>
+                                    </div>
+                                </div>
+                                <div class="textBt alignright">
+                                    <a href="#" class="btn marr10 mart5" id="checkAll">全选</a>
+                                    <a href="#" class="btn marr10 mart5" id="checkMore">多选</a>
+                                    <a href="#" class="btn btn-remove marr10 mart5" id="remove">移除接收人</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="MainRight"></div>
+        </div>
+    </div>
+    <!--right bar over-->
+    <div class="mask" style="display: none"></div>
+</div>
+</body>
+</html>
