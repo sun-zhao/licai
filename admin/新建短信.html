@@ -8,11 +8,41 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript">
         $(function(){
+            var $userBox = $('.userBox'),
+                $userInfo = $('.userInfo');
+
+            $userInfo.click(function(){
+                var $this = $(this),
+                    $imgSrc = $this.find('img').attr('src'),
+                    $name = $this.find('p.font17').text(),
+                    $Index = $this.parent('.personBoard').index() ;
+                if (!$this.parent('.personBoard').hasClass('current')) {
+                    $this.parent('.personBoard').addClass('current');
+                    $userBox.append(
+                            "<div class='oneUser clearfix'" + "name" + "=" + $Index + ">" +
+                            "<span class='floatleft'>" + "<img" + " " + "src=" + "'" + $imgSrc + "'" + ">"  + "</span>" +
+                            "<span class='marl10'>" + $name + "</span>" +
+                            "<a href='javascript:;' class='delete'>" + "×" + "</a>" +
+                            "<a href='javascript:;' class='check'>" + "<em>" + "</em>" + "</a>" +
+                            "</div>"
+                    );
+                } else {
+                    $this.parent('.personBoard').removeClass('current');
+                    $('.oneUser[name ="'+$Index+'"]').remove();
+                }
+                touch();
+            });
+
+    function touch(){
             var $checkAll = $('#checkAll'),
                 $checkMore = $('#checkMore'),
+                $userBox = $('.userBox'),
                 $remove = $('#remove'),
                 $oneUser = $('.oneUser'),
-                $check = $('.check');
+                $check = $('.check'),
+                $delete = $('.delete'),
+                $userBox = $('.userBox'),
+                $userInfo = $('.userInfo');
             $checkMore.click(function(){
                 var $this = $(this);
                 if($this.text()=="多选"){
@@ -64,8 +94,15 @@
             });
             $remove.click(function(){
                 $('.current','.oneUser').parent('.oneUser').remove();
-
+//                $('.personBoard').removeClass('current');
             });
+            $delete.click(function(){
+                var $nameIn = $(this).parent('.oneUser').attr('name');
+                $(this).parent('.oneUser').remove();
+                $('.personBoard:eq(" '+$nameIn+' ")').removeClass('current');
+            });
+    }
+            touch();
         });
     </script>
 </head>
@@ -130,24 +167,6 @@
                                         <a href="javascript:;" class="delete">×</a>
                                         <a href="javascript:;" class="check"><em></em></a>
                                     </div>
-                                    <div class="oneUser clearfix">
-                                        <span class="floatleft"><img src="../img/3.jpg"></span>
-                                        <span class="marl10">村上的鸟</span>
-                                        <a href="javascript:;" class="delete">×</a>
-                                        <a href="javascript:;" class="check"><em></em></a>
-                                    </div>
-                                    <div class="oneUser clearfix">
-                                        <span class="floatleft"><img src="../img/4.jpg"></span>
-                                        <span class="marl10">村树</span>
-                                        <a href="javascript:;" class="delete">×</a>
-                                        <a href="javascript:;" class="check"><em></em></a>
-                                    </div>
-                                    <div class="oneUser clearfix">
-                                        <span class="floatleft"><img src="../img/4.jpg"></span>
-                                        <span class="marl10">村上树</span>
-                                        <a href="javascript:;" class="delete">×</a>
-                                        <a href="javascript:;" class="check"><em></em></a>
-                                    </div>
                                 </div>
                                 <div class="textBt alignright">
                                     <a href="#" class="btn marr10 mart5" id="checkAll">全选</a>
@@ -159,7 +178,159 @@
                     </tr>
                 </table>
             </div>
-            <div class="MainRight"></div>
+            <div class="MainRight">
+                <table class="topBtn">
+                    <tr>
+                        <td><a href="#" class="btn current">同业</a></td>
+                        <td><a href="#" class="btn">客户</a></td>
+                    </tr>
+                </table>
+                <div class="friend_list">
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">刘德华</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/2.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">胡润发</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/3.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">高圆圆</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/4.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">刘强东</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/5.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">赵本山水</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/2.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">苍井空子</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">村上春树</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/3.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">日本人妖</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/4.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">Bruce Zhang</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/5.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">zhaohdhf</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personBoard">
+                        <div class="userInfo mart5 clearfix">
+                            <span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
+                            <div class="floatleft marl15 font13">
+                                <p class="font17">齐天大圣</p>
+                                <p>北京银行西城支行</p>
+                            </div>
+                            <div class="floatright alignright color-6">
+                                <p><i class="icon icon-33 marr5"></i><span>393</span></p>
+                                <p><i class="icon icon-44 marr5"></i><span>393</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--right bar over-->
