@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1edf22b-960e-4c0d-8412-3fdbab7f6078" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/appstyle.css" afterPath="$PROJECT_DIR$/css/appstyle.css" />
-    </list>
+    <list default="true" id="a1edf22b-960e-4c0d-8412-3fdbab7f6078" name="Default" comment="" />
     <ignored path="licai.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,20 +88,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="所有理财师列表.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="所有理财师列表.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wechat/所有理财师列表.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.6666665" vertical-offset="1349" max-vertical-offset="2040">
+            <state vertical-scroll-proportion="0.1968162" vertical-offset="1349" max-vertical-offset="2040">
               <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appstyle.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="appstyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/appstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334" vertical-offset="5286" max-vertical-offset="6585">
+            <state vertical-scroll-proportion="0.0" vertical-offset="5286" max-vertical-offset="6585">
               <caret line="368" column="133" selection-start-line="368" selection-start-column="133" selection-end-line="368" selection-end-column="133" />
               <folding />
             </state>
@@ -226,24 +224,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="licai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="licai" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="产品详情-添加-关联" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,18 +710,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat/所有理财师列表.html">
+    <entry file="file://$PROJECT_DIR$/css/appstyle.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.6666665" vertical-offset="1349" max-vertical-offset="2040">
-          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="5286" max-vertical-offset="6585">
+          <caret line="368" column="133" selection-start-line="368" selection-start-column="133" selection-end-line="368" selection-end-column="133" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/appstyle.css">
+    <entry file="file://$PROJECT_DIR$/wechat/所有理财师列表.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="5286" max-vertical-offset="6585">
-          <caret line="368" column="133" selection-start-line="368" selection-start-column="133" selection-end-line="368" selection-end-column="133" />
+        <state vertical-scroll-proportion="0.1968162" vertical-offset="1349" max-vertical-offset="2040">
+          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
           <folding />
         </state>
       </provider>

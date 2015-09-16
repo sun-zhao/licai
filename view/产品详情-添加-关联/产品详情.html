@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 		<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" /> 
 		<meta name="apple-touch-fullscreen" content="yes"/>
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
@@ -8,8 +9,13 @@
 		<script type="text/javascript" src="../js/jquery.js" ></script>
 		<script type="text/javascript" src="../js/active.js" ></script>
 		<title>产品详情</title>
-	<body class="wechat">
-		<div class="main">
+	</head>
+	<body>
+		<header class="header">
+			<span class="icon icon-back floatleft"></span>
+			<h1 class="aligncenter font17" style="left:70px;right:70px;">产品详情</h1>
+		</header>
+		<div class="main Ios_scroll" style="top:50px;bottom:30px;">
 			<div class="oneCard detail">
 				<div class="font11 title color-a alignright">
 					<span class="tips floatleft strong">理 财</span>
@@ -65,27 +71,23 @@
 			<ul class="inputList mart10">
 				<li class="clearfix noboder">
 					<span class="lable">产品描述</span>
-					<p class="font15 txt">
-述我是个描述我是个描述我是个描述我是个描述我是
-个描述我是个描述</p>
+					<p class="font15 txt">述我是个描述我是个描述我是个描述我是个描述我是个描述我是个描述</p>
 				</li>
 			</ul>
 		</div>
-		<div class="mask"></div>
-		<!--计算收益弹出begin-->
-		<div class="bottomPopW p-top10 show" title="微信用这个">
-			<p class="aligncenter font16">计算理财收益</p>
-			<p class="aligncenter font13 mart10">输入您的购买金额：<input type="phone" class="numberInt" /></p>
-			<p class="aligncenter font13 mart5">您的预期收益是:<span class="font16">10029元</span></p>
-			<div class="shareBtn font16 color-3 aligncenter mart10">开始计算</div>
-			<div class="shareBtn font16 color-6 aligncenter">取 消</div>
+		<!--产品详情底部上拉查看图片详情 begin-->
+		<footer class="footer footerInner clearfix"><p class="aligncenter font14 color-8"><img src="../../img/top_arrow.png" width="20" class="marr10">上拉查看图片详情</p></footer>
+		<!--产品详情底部上拉查看图片详情 over-->
+		<!--图片的DOM begin-->
+		<div class="main Ios_scroll" style="top:100%;">
+			<div class="imgDetail">
+				<p class="font14 title color-8d">下拉回到“产品详情”</p>
+				<p><img src="../../img/3.jpg"></p>
+				<p><img src="../../img/4.jpg"></p>
+				<p><img src="../../img/5.jpg"></p>
+			</div>
+			<span class="goTop"></span>
 		</div>
-		<!--计算收益弹出over-->
-		<!--wechat的底部begin-->
-		<footer class="footer footerInner clearfix"  title="微信用这个">
-			<span class="floatleft marl15">计算收益</span>
-			<span class="floatright marr15">收藏</span>
-		</footer>
-		<!--wechat的底部over-->
+		<!--图片的DOM over-->
 	</body>
 </html>
