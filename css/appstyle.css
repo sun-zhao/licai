@@ -1,7 +1,7 @@
 /*reset*/
 html{color:#333;}
 body{font-size:12px;line-height:1.8em;font-family:Tahoma,Arial;background:#eee;position: relative;}
-html,body{height:100%;overflow:hidden;}
+html,body{height:100%;}
 body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd,pre{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 img{border:none;}
@@ -209,16 +209,19 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .bottomBtn span{display: inline-block;height:40px;border-left:1px solid #d9d9d9;position: absolute;left:50%;margin-left:-1px;}
 .change{color:#3875a9;}
 
-.header{height:49px;line-height:49px;border-bottom:1px solid #b2b2b2;background:#fff;position:fixed;left:0;top:0;right:0;color:#000;position:relative;}
+.header{height:49px;line-height:49px;border-bottom:1px solid #b2b2b2;background:#fff;position:fixed;left:0;top:0;right:0;color:#000;z-index:20;}
 .header h1{position: absolute;top:0;bottom:0;left:50px;right:50px;}
-.main{width:100%;overflow-y: auto;position: absolute;top:0;left:0;right:0;bottom:0;transition:0.3s;-webkit-transition:0.3s;}
-/*.detailMain .main{position: relative;min-height: 100%;overflow-y:scroll;}*/
+.main{width:100%;transition:0.3s;-webkit-transition:0.3s;}
+.androidMain{width:100%;}
+.androidMain .main{position:absolute;overflow-y: scroll;position: absolute;top:0;left:0;right:0;bottom:0;}
+
+
 .title{height:40px;line-height: 40px;color:#666;}
 .inputList{border:1px solid #d9d9d9;border-width:1px 0;padding-left:10px;background:#fff;}
 .inputList li{min-height:45px;line-height: 45px;border-bottom:1px solid #d9d9d9;position: relative;}
 .inputList li:last-child{border:0;}
 .inputList li span.lable{display:inline-block;height: 45px;line-height: 47px;color:#2a2a2a;font-size:16px;}
-.inputList li input,.inputList li .placeTxt,.LineInt,.lableTxt{width:68%;min-height:45px;font-size:14px;float: right;margin-right:15px;color:#8d8d8d;}
+.inputList li input,.inputList li .placeTxt,.LineInt,.lableTxt{width:68%;min-height:45px;line-height:49px;font-size:14px;float: right;margin-right:15px;color:#8d8d8d;}
 .inputList li input.LineInt{width:100%;margin:0;}
 .inputList li .placeTxt{width:60%;background: url(../img/arrow-r.png) right center no-repeat;background-size:8px;padding-right:20px;}
 .placeTxt img{vertical-align: middle;}
@@ -244,8 +247,9 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .imgList .ImgBox img{width:120px;float: left;margin:0 5px;}
 .ulBg li{min-height:45px;background: url(../img/arrow-r.png) 95% 18px no-repeat;background-size:8px;}
 .addBtn{display:inline-block;height:24px;line-height:24px;font-size:12px;border:1px solid #1db3df;background:#16c1f3;border-radius:2px;color:#fff;padding:0 10px;position: absolute;right:15px;top:24px;}
-
-
+.addBtn.nobg{right:6px;}
+.ulIcon li{padding-left:40px;}
+.ulIcon li .icon{position:absolute;top:50%;left:0;margin-top:-20px;}
 /*理财室*/
 .nav{width:65%;margin:0 auto;padding-top:10px;position: absolute;left:50%;margin-left:-31.5%;}
 .nav li{display:inline-block;float:left;width:32%;height:27px;line-height:27px;border:1px solid #812990;text-align: center;color:#812990;}
@@ -262,7 +266,10 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .footerInner span{width:40%;padding:0;font-size:16px;height:50px;line-height:50px;}
 .footer.hide{bottom:-50px;transition:0.3s;-webkit-transition:0.3s;}
 .footerThree span{width:33.3%;text-align: center;}
-.commentInt{display:block;width:90%;height:30px;margin:0 auto;margin-top:9px;border:1px solid #aeaeae;border-radius:4px;background:#fff;text-indent:5px;}
+.commentInt{display:inline-block;width:75%;min-height:30px;line-height:30px;margin:9px 0 9px 10px;border:1px solid #aeaeae;border-radius:4px;background:#fff;text-indent:5px;outline: none;color:#333;}
+.footer .btnSend{display: inline-block;height:30px;line-height:30px;position:absolute;width:15%;text-align:center;top:50%;margin-top:-15px;right:10px;background:#18bff4;color:#fff;border-radius:3px;}
+
+
 .footerMask,.footerOpactiy{height:50px;border-top:0;background:none;transition:0.2s;-webkit-transition:0.2s;}
 .footerMask{background:#f7f7f7;-webkit-filter: blur(1px);opacity: 0.9;}
 .footerOpactiy{opacity: 0.7;}
@@ -288,6 +295,7 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .tips,.tip,.tipsBig{display:inline-block;height:20px;line-height:22px;margin-left:-11px;background:#fc7864;color:#fff;padding:0 10px 0 7px;border-radius:2px 20px 20px 2px;}
 .tips-j{background:#febf0f;}
 .tips-x{background:#16c1f3;}
+.oneCard p.strong{width:65%;line-height:24px;}
 .productList .tips{position:absolute;left:0;top:50%;margin:0;margin-top:-10px;}
 .oneCard em{color:#9c66ab;padding-left:5px;}
 .tip{height:17px;line-height:18px;padding:0 6px;color:#633eb0;border:1px solid #633eb0;border-radius:3px;background:#fff;margin-left:10px;position:relative;top:-1px;}
@@ -330,6 +338,8 @@ margin-top:-11px;transition:0.3s;-webkit-transition:0.3s;}
 .feedList li .font17{color:#2a2a2a;}
 .feedList li .marl60 p:first-child{height:20px;line-height:20px;margin:5px 0 10px 0;}
 .feedList li p.txt_hidden{width:55%;}
+.feedList li p em.nameSpan{color:#596c90;padding-right:3px;}
+.feedList li p em.nameSpan:nth-child(2){padding:0 3px;}
 .searchBar{height:44px;background-color:#d9d9d9;padding:0 10px;border-bottom: 1px solid #b5b5b5;margin-top:-45px;transition:0.3s;-webkit-transition:0.3s;}
 .searchBar.current{margin-top:0;transition:0.3s;-webkit-transition:0.3s;}
 .searchBar input{width:100%;height:28px;border:0;background-color:#fff;border-radius:5px;margin-top:8px;text-indent: 25px;
@@ -373,6 +383,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .wordList td{height:36px;border:4px solid #e5e5e5;background:#fff;}
 .wordList span{display:block;height:36px;line-height:36px;text-align:center;}
 .wordList span.current{box-shadow:0 1px 1px #666 inset;}
+.wordList td.noData{background:#f5f5f5;color:#bbb;}
 .wordList.current{top:0;transition:0.2s;-webkit-transition:0.2s;}
 .shareBox{background:#fff;padding:10px 0;}
 .shareBox li img{width:50px;}
@@ -383,7 +394,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .topNav li.current{color:#333;}
 .commentList .personBoard .floatright{width:26%;}
 
-.mask{width:100%;position:fixed;top:0;left:0;bottom:0;background:#000;opacity:0.5;display: none;}
+.mask{width:100%;position:fixed;top:0;right:0;left:0;bottom:0;display: none;}
 
 .timeBar{display:inline-block;margin:10px 0 5px 0;height:25px;line-height:25px;border-radius:3px;background:#ccc;padding:0 15px; color: #fff;}
 .feedLeft,.feedRight{margin:15px 10px;}

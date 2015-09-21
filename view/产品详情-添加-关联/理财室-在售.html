@@ -7,7 +7,7 @@
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
 		<link rel="stylesheet" type="text/css" href="../../css/appstyle.css">
 		<script type="text/javascript" src="../../js/jquery.js" ></script>
-		<script type="text/javascript" src="../../js/active.js" ></script>
+		<!--<script type="text/javascript" src="../../js/active.js" ></script>-->
 		<title>理财室-在售中</title>
 		<script>
 			// H5 plus事件处理
@@ -21,20 +21,9 @@
 			}else{
 				document.addEventListener("plusready",plusReady,false);
 			}
-			$(window).scroll(function(){
-			    if($(window).scrollTop()==0){    //垂直滚动条钓offset 大于90时。
-			        $(".topImg").css({
-			           "width":1000,       //修改相关div样式
-			       });
-			    }else{
-			        $(".topImg").css({
-			           "width":0,       //修改相关div样式
-			       });
-			    }
-			});
 		</script>
 	</head>
-	<body class=" Ios_scroll">
+	<body class="androidMain">
 		<div class="main">
 			<section class="personBoard">
 				<div class="topImg">
@@ -58,15 +47,14 @@
 					<span class="txt_hidden">走路太骚会摔跤，得瑟过劲必闪腰得瑟过劲必闪腰得瑟过劲必闪腰得瑟过劲必闪腰</span>
 				</div>
 			</section>
-			<div class="cardBox">
-				<div class="oneCard">
+			<ul class="cardBox">
+				<li class="oneCard">
 					<p class="font11 title color-a alignright">
 						<span class="tips floatleft strong">理 财</span>
 						<span class="floatleft marl5">1小时前更新</span>
 						<span>关联自<em>Brad Pitt</em></span>
 					</p>
-					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合</p>
-					<p class="color-3 marl10 mart5 font17 strong">资金信托计划<span class="tip font12">在售</span></p>
+					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合资金信托计划<span class="tip font12">在售</span></p>
 					<div class="clearfix mart5">
 						<span class="font14 floatleft inlineblock marl10 p-top25 color-9">期限:<em class="color-6">35 - 365天</em></span>
 						<div class="floatright alignright marr10">
@@ -79,15 +67,14 @@
 						<span class="clearfix floatleft"><i class="icon icon-change floatleft"></i><em class="color-9 floatleft">823</em></span>
 						<span><i class="icon icon-comment"></i></span>
 					</div>
-				</div>
-				<div class="oneCard">
+				</li>
+				<li class="oneCard">
 					<p class="font11 title color-a alignright">
 						<span class="tips tips-j floatleft strong">基 金</span>
 						<span class="floatleft marl5">1小时前更新</span>
 						<span>关联自<em>Brad Pitt</em></span>
 					</p>
-					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合</p>
-					<p class="color-3 marl10 mart5 font17 strong">资金信托计划<span class="tip tip-over font12">募集期结束</span></p>
+					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合资金信托计划<span class="tip tip-over font12">募集期结束</span></p>
 					<div class="clearfix mart5">
 						<span class="font14 floatleft inlineblock marl10 p-top25 color-9">期限:<em class="color-6">35 - 365天</em></span>
 						<div class="floatright alignright marr10">
@@ -100,15 +87,14 @@
 						<span class="clearfix floatleft"><i class="icon icon-change floatleft"></i><em class="color-9 floatleft">823</em></span>
 						<span><i class="icon icon-comment"></i></span>
 					</div>
-				</div>
-				<div class="oneCard">
+				</li>
+				<li class="oneCard">
 					<p class="font11 title color-a alignright">
 						<span class="tips tips-x floatleft strong">信 托</span>
 						<span class="floatleft marl5">1小时前更新</span>
 						<span>关联自<em>Brad Pitt</em></span>
 					</p>
-					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合</p>
-					<p class="color-3 marl10 mart5 font17 strong">资金信托计划<span class="tip font12">在售</span></p>
+					<p class="color-3 marl10 font17 mart10 strong">鑫晟财富2014004号集合资金信托计划<span class="tip font12">在售</span></p>
 					<div class="clearfix mart5">
 						<span class="font14 floatleft inlineblock marl10 p-top25 color-9">期限:<em class="color-6">35 - 365天</em></span>
 						<div class="floatright alignright marr10">
@@ -121,13 +107,13 @@
 						<span class="clearfix floatleft"><i class="icon icon-change floatleft"></i><em class="color-9 floatleft">823</em></span>
 						<span><i class="icon icon-comment"></i></span>
 					</div>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</div>
 		<div class="mask"></div>
 		<!--底部弹出begin-->
-		<footer class="footer footerMask" style="height:100px;bottom:0;" title="消失时候变成bottom:-99px"></footer>
-		<div class="bottomPop aligncenter current nobg" id="bottomPop">
+		<footer class="footer footerMask" style="height:100px;bottom:-199px;" title="消失时候变成bottom:-99px"></footer>
+		<div class="bottomPop aligncenter current nobg" id="bottomPop" style="display: none;">
 			<span class="popBtn">
 				<i class="icon icon-plus-big"></i>
 				<em class="font11 color-6">添加产品</em>

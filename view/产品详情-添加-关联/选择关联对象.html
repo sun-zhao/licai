@@ -15,7 +15,7 @@
 				<input type="text" class="langTxt font14 " placeholder="姓名/昵称" title="当input foucs和不为空的时候加current">
 			</div>
 			<!--搜索over-->
-			<p class="checkWord marl10 font14 color-8">A</p>
+			<p class="checkWordLine marl10 font14 color-8">A</p>
 			<ul class="inputList friend_list mart-1">
 				<li class="clearfix p-top10 p-bt10">
 					<span class="userPhoto floatleft"><img src="../../img/1.jpg"></span>
@@ -33,7 +33,7 @@
 					</div>
 				</li>
 			</ul>
-			<p class="checkWord marl10 font14 color-8">B</p>
+			<p class="checkWordLine marl10 font14 color-8">B</p>
 			<ul class="inputList friend_list mart-1">
 				<li class="clearfix p-top10 p-bt10">
 					<span class="userPhoto floatleft"><img src="../../img/1.jpg"></span>
@@ -70,7 +70,7 @@
 			</ul>
 		</div>
 		<!--字母检索begin-->
-		<div class="wordCheck">
+		<div class="wordCheck" style="display: none;">
 			<span>A</span>
 			<span>B</span>
 			<span>C</span>
@@ -87,5 +87,36 @@
 			<span>N</span>
 		</div>		
 		<!--字母检索over-->
+		<!--字母列表begin-->
+		<section class="wordList">
+			<table>
+				<tr>
+					<td><span>A</span></td>
+					<td><span class="current">B</span></td>
+					<td><span>C</span></td>
+					<td class="noData"><span>D</span></td>
+					<td><span>E</span></td>
+					<td><span>F</span></td>
+					<td><span>F</span></td>
+					<td><span>F</span></td>
+				</tr>
+				<tr>
+					<td><span>A</span></td>
+					<td><span>B</span></td>
+					<td><span>C</span></td>
+					<td><span>D</span></td>
+					<td><span>E</span></td>
+					<td><span>F</span></td>
+					<td><span>F</span></td>
+					<td><span>F</span></td>
+				</tr>
+			</table>
+		</section>
+		<!--字母列表-->
+		<!--筛选begin-->
+		<span class="checkWord" title="选完以后加 current" style="bottom:50px;">A<i class="icon icon-select"></i></span>
+		<!--筛选over-->
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/active.js" ></script>
 	</body>
 </html>
