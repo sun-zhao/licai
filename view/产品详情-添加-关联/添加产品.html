@@ -9,13 +9,18 @@
 		<script type="text/javascript" src="../../js/jquery.js" ></script>
 		<script type="text/javascript" src="../../js/active.js" ></script>
 		<title>添加理财产品</title>
+		<script>
+			window.addEventListener('resize', function() {
+			    document.getElementById("bottomBtn").style.display = document.body.clientHeight <= 400 ? 'none' : 'block';
+			}, false);
+		</script>
 	</head>
 	<body>
 		<header class="header">
-			<span class="icon icon-back floatleft"></span>
-			<!--<span class="headerBtn prev_step aligncenter">上一步</span>-->
+			<!--<span class="icon icon-back floatleft"></span>-->
+			<div class="prev_step"><span class="headerBtn aligncenter">上一步</span></div>
 			<h1 class="aligncenter font17">添加产品</h1>
-			<span class="headerBtn aligncenter">下一步</span>
+			<div class="next_step"><span class="headerBtn aligncenter">下一步</span></div>
 			<!--<span class="headerBtn aligncenter">发布</span>-->
 		</header>
 		<div class="main p-bt10 Ios_scroll" style="top:50px;bottom:50px;">
@@ -36,10 +41,10 @@
 					<input type="password" class="alignright" placeholder="未填写"/>
 					<label class="lableTxt">请填写正确发行机构</label>
 				</li>
-				<li class="clearfix has-error">
+				<li class="clearfix">
 					<span class="lable">发行机构</span>
-					<span class="alignright placeTxt">请选择</span>
-					<label class="lableTxt">请填写正确发行机构</label>
+					<span class="alignright placeTxt txt_hidden">请请填写正确发行机构请填写正确发行机构请填写正确发行机构选择</span>
+					<!--<label class="lableTxt">请填写正确发行机构</label>-->
 				</li>
 				<li class="clearfix">
 					<span class="lable">收益类型</span>
@@ -83,9 +88,16 @@
 			</ul>
 		</div>
 		<!--添加产品的底部begin-->
-		<footer class="footer footerInner  clearfix" title="加上hide，就会显示原来的footer">
+		<!--<footer class="footer footerInner  clearfix" title="加上hide，就会显示原来的footer">
 			<span class="floatleft marl15">增加产品详情</span>
 			<span class="floatright marr15">使用图片</span>
+		</footer>-->
+		<footer class="footer clearfix" id="bottomBtn">
+			<span><i class="icon icon-home"></i>理财室</span>
+			<span class="current"><i class="icon icon-friend"></i>同行好友</span>
+			<span id="plus" class=""><i class="icon icon-plus"></i></span>
+			<span><i class="icon icon-friends"></i>客户好友</span>
+			<span><i class="icon icon-msg"></i>消息提醒<i class="icon icon-p">9</i></span>
 		</footer>
 		<!--添加产品的底部over-->
 	</body>
