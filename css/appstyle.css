@@ -396,7 +396,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .topNav li.current{color:#333;}
 .commentList .personBoard .floatright{width:26%;}
 
-.mask{width:100%;position:fixed;top:0;right:0;left:0;bottom:0;display: none;}
+.mask{width:100%;position:fixed;top:0;right:0;left:0;bottom:0;display: none;z-index:200;}
 
 .timeBar{display:inline-block;margin:10px 0 5px 0;height:25px;line-height:25px;border-radius:3px;background:#ccc;padding:0 15px; color: #fff;}
 .feedLeft,.feedRight{margin:15px 10px;}
@@ -440,7 +440,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .shareBottom div a{display: inline-block;border-radius:3px;color:#fff;background:#16c1f3;padding:0 15px;text-indent: 0}
 .shareBottom div:last-child a{background:#22ac38;}
 .shareBottom div:last-child {padding-right:10px;}
-
+.wechat .mask{background:#000;opacity:0.3;}
 
 
 
