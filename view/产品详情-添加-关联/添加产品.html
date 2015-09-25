@@ -9,6 +9,11 @@
 		<script type="text/javascript" src="../../js/jquery.js" ></script>
 		<script type="text/javascript" src="../../js/active.js" ></script>
 		<title>添加理财产品</title>
+		<script>
+			window.addEventListener('resize', function() {
+			    document.getElementById("bottomBtn").style.display = document.body.clientHeight <= 400 ? 'none' : 'block';
+			}, false);
+		</script>
 	</head>
 	<body>
 		<header class="header">
@@ -83,9 +88,16 @@
 			</ul>
 		</div>
 		<!--添加产品的底部begin-->
-		<footer class="footer footerInner  clearfix" title="加上hide，就会显示原来的footer">
+		<!--<footer class="footer footerInner  clearfix" title="加上hide，就会显示原来的footer">
 			<span class="floatleft marl15">增加产品详情</span>
 			<span class="floatright marr15">使用图片</span>
+		</footer>-->
+		<footer class="footer clearfix" id="bottomBtn">
+			<span><i class="icon icon-home"></i>理财室</span>
+			<span class="current"><i class="icon icon-friend"></i>同行好友</span>
+			<span id="plus" class=""><i class="icon icon-plus"></i></span>
+			<span><i class="icon icon-friends"></i>客户好友</span>
+			<span><i class="icon icon-msg"></i>消息提醒<i class="icon icon-p">9</i></span>
 		</footer>
 		<!--添加产品的底部over-->
 	</body>
