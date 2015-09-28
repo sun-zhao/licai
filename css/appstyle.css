@@ -443,9 +443,9 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .shareBottom div:last-child a{background:#22ac38;}
 .shareBottom div:last-child {padding-right:10px;}
 .wechat .mask{background:#000;opacity:0.3;}
-
-
-
-
+.popLog{width:200px;height:100px;background:#fff;position: fixed;top:50%;left:50%;margin:-50px 0 0 -100px;border-radius:4px;z-index:200;}
+.popLog .bottomBar{width:100%;height:30px;line-height:30px;border-top:1px solid #4078c0;position: absolute;left;0;bottom:0;}
+.popLog .bottomBar a{display:inline-block;width:50%;height:30px;line-height:30px;color:#666;text-align: center;float: left;}
+.popLog .bottomBar a:last-child{border-left:1px solid #4078c0;margin-left:-1px;}
 
 
