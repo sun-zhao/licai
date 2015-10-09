@@ -7,6 +7,11 @@
 	    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
     		<link rel="stylesheet" type="text/css" href="../../css/appstyle.css">
 		<title>首次登录页</title>
+		<script>
+			window.addEventListener('resize', function() {
+			    document.getElementById("bottomBtn").style.display = document.body.clientHeight <= 400 ? 'none' : 'block';
+			}, false);
+		</script>
 	</head>
 	<body>
 		<div class="loginBox">
@@ -27,7 +32,7 @@
 				<a href="javascript:;" class="loginBtn aligncenter font17">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
 				<p class="alignright mart5"><a href="#">忘记密码？</a></p>
 			</section>
-			<section class="bottomBtn clearfix">
+			<section class="bottomBtn clearfix" id="">
 				<a href="javascript:;" class="font14 floatleft aligncenter">注册新用户</a>
 				<span></span>
 				<a href="javascript:;" class="font14 floatright aligncenter">微信账号登录</a>
