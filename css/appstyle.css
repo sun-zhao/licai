@@ -429,7 +429,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 .wechat .main{position: absolute;width:100%;top:0;bottom:50px;overflow:hidden;overflow-y: auto;}
 .bottomPopW{width:100%;background:#e7e6eb;position:absolute;left:0;bottom:-220px;transition:0.3s;-webkit-transition:0.3s;}
 .bottomPopW.show{bottom:50px;transition:0.3s;-webkit-transition:0.3s;z-index:300;}
-.bottomPopB{background:#fff;}
+.bottomPopB{background:#fff;transition:0.3s;-webkit-transition:0.3s;}
 .bottomPopB.show{bottom:0;}
 .bottomPopB .shareBtn{border-top:1px solid #e7e6eb;margin:0;color:#22ac38;}
 .bottomPopB .shareBtn:last-child{border-top:5px solid #e7e6eb;}
