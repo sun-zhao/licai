@@ -7,34 +7,23 @@
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
 		<link rel="stylesheet" type="text/css" href="../css/appstyle.css">
 		<script type="text/javascript" src="../js/jquery.js" ></script>
-		<script type="text/javascript" src="../js/active.js" ></script>
+		<!--<script type="text/javascript" src="../js/active.js" ></script>-->
 		<title>理财室-在售中</title>
 		<script>
-			// H5 plus事件处理
-			function plusReady(){
-				ws=plus.webview.currentWebview();
-				ws.setBounce({position:{top:"100px"},changeoffset:{top:"44px"}});
-				ws.addEventListener("dragBounce",onPullStateChange,false);
-			}
-			if(window.plus){
-				plusReady();
-			}else{
-				document.addEventListener("plusready",plusReady,false);
-			}
-			$(window).scroll(function(){
-			    if($(window).scrollTop()==0){    //垂直滚动条钓offset 大于90时。
-			        $(".topImg").css({
-			           "width":1000,       //修改相关div样式
-			       });
-			    }else{
-			        $(".topImg").css({
-			           "width":0,       //修改相关div样式
-			       });
-			    }
+			$(function(){
+			  $('#remove').click(function(){
+			  	var confirmContent = '<div class="bottomPopW bottomPopB p-top10" id="rym_pop_confirm">' +
+							        '<p class="aligncenter font14 color-8 p-bt10 p-top10">{msg}</p>' +
+							        '<div class="shareBtn font16 aligncenter mart10 okBtn">{okText}</div>' +
+							        '<div class="shareBtn font16 color-6 aligncenter cancelBtn">{cancelText}</div>' +
+							        '</div>';
+			  	$('body').append(confirmContent);
+			  	setTimeout("$('#rym_pop_confirm').addClass('show');",1)
+			  });
 			});
 		</script>
 	</head>
-	<body class="wechat Ios_scroll">
+	<body class="wechat Ios_scroll opacityMask">
 		<div class="main">
 			<section class="personBoard">
 				<div class="topImg">
@@ -44,13 +33,13 @@
 				<div class="userInfo mart5 clearfix">
 					<span class="userPhoto floatleft"><img src="../img/1.jpg"></span>
 					<div class="floatleft marl15 mart10 font13">
-						<p class="font17">Bruce Zhang</p>
+						<p class="font17">Bruce Zhang<a href="#" class="font12 marl15" style="color:#633eb0;">拨打电话</a></p>
 						<p>北京银行西城支行</p>
 						<p>工号：S179973689701</p>
 					</div>
 					<div class="floatright mart15 alignright color-6">
 						<p class="current">168<i class="icon icon-3 marl5"></i></p>
-						<p>2882<i class="icon icon-4 marl5"></i></p>
+						<p class="current">2882<i class="icon icon-4 marl5"></i></p>
 					</div>
 				</div>
 				<div class="signature mart5 font12 color-6"><i class="icon icon-arrow-t"></i>走路太骚会摔跤，得瑟过劲必闪腰</div>
@@ -77,7 +66,7 @@
 						<span><i class="icon icon-comment"></i></span>
 					</div>
 				</div>
-				<div class="oneCard">
+				<div class="oneCard ">
 					<p class="font11 title color-a alignright">
 						<span class="tips tips-j floatleft strong">基 金</span>
 						<span class="floatleft marl5">1小时前更新</span>
@@ -125,7 +114,7 @@
 		<footer class="footer footerInner footerThree  clearfix" title="加上hide，就会显示原来的footer">
 			<span class="floatleft">关注</span>
 			<span class="floatleft">私信TA</span>
-			<span class="floatright">拉黑TA</span>
+			<span class="floatright" id="remove">拉黑TA</span>
 		</footer>
 		<!--wechat的底部over-->
 		<!--底部弹出begin-->
@@ -140,7 +129,7 @@
 			</span>
 		</div>
 		<!--底部弹出over-->
-		<div class="mask" style="display: block;"></div>
+		<div class="mask" style="display: ;"></div>
 		<!--弹出对话框begin-->
 		<div class="popLog"  style="display: none;">
 			<p class="aligncenter p-top30 font14">关注成功</p>
@@ -152,7 +141,7 @@
 		</div>
 		<!--弹出对话框over-->
 		<!--计算收益弹出begin-->
-		<div class="bottomPopW bottomPopB p-top10 show">
+		<div class="bottomPopW bottomPopB p-top10 show" style="display: none;">
 			<p class="aligncenter font14 color-8 p-bt10 p-top10">是否要取消关注这个理财产品？</p>
 			<div class="shareBtn font16 aligncenter mart10">确 定</div>
 			<div class="shareBtn font16 color-6 aligncenter">取 消</div>
