@@ -160,6 +160,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .icon-3,.icon-4{width:14px;height:14px;background-image:url(../img/icon-3.png);background-size:100%;}
 .icon-4{background-image:url(../img/icon-4.png);}
 .current .icon-3{background-image:url(../img/icon-3h.png);}
+.current .icon-4{background-image:url(../img/icon-4h.png);}
 .icon-arrow-t{width:11px;height:10px;background-image: url(../img/arrow-t.png);position: absolute;top:-9.5px;left:10px;background-size:100%;}
 .icon-eye{background-image:url(../img/icon-eye.png);background-size:14px;}
 .icon-change{background-image:url(../img/icon-change.png);background-size:14px;}
