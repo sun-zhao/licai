@@ -213,7 +213,7 @@ font-size:12px;}
 .loginInt input{width:100%;height:30px;line-height:38px;border-bottom:1px solid #eee;display:block;text-indent:40px;font-size:14px;}
 .loginInt p .icon{position: absolute;top:-2px;left:0;}
 .loginInt p .icon-clear{left:inherit;right:10px;top:50%;margin-top:-10px;display: none;}
-.bottomBtn{position:fixed;bottom:0;left:30px;right:30px;bottom:10px;}
+.bottomBtn{position:fixed;left:30px;right:30px;bottom:10px;}
 .bottomBtn a{display: inline-block;width:42%;height:39px;line-height:39px;border:1px solid #aaa;border-radius:30px;}
 .bottomBtn span{display: inline-block;height:40px;border-left:1px solid #d9d9d9;position: absolute;left:50%;margin-left:-1px;}
 .change{color:#3875a9;}
@@ -250,7 +250,7 @@ font-size:12px;}
 .getNum{display:inline-block;height:40px;line-height:40px;padding:0 20px;border-radius:3px;background:#812990;color:#fff;}
 .waitNum{background:#aaa;}
 .textareaLi li p:last-child{height:20px;line-height:20px;color:#bbb;}
-.inputList li textarea{margin-top:-10px;width:97%;height:60px;line-height:20px;color:#8d8d8d;}
+.inputList li textarea,.inputList li .textBox{margin-top:-10px;width:97%;min-height:60px;line-height:20px;color:#8d8d8d;outline: 0;}
 .imgList {padding:10px 0;}
 .imgList li{width:100%;overflow-y:hidden;overflow-x: auto;}
 .imgList .ImgBox span{display: inline-block;width:120px;margin:0 2px;float:left;position:relative;}
