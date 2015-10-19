@@ -6,6 +6,13 @@
 		<meta name="apple-touch-fullscreen" content="yes"/>
 		<meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"> 
 		<link rel="stylesheet" type="text/css" href="../../css/appstyle.css">
+		<script type="text/javascript" src="../../js/jquery.js" ></script>
+		<script type="text/javascript" src="../../js/autosize.js" ></script>
+		<script>
+			$(function(){
+				autosize(document.querySelectorAll('.textarea'));
+			});
+		</script>
 		<title>评论记录</title>
 	<body>
 		<div class="main bgwhite">
@@ -77,5 +84,11 @@
 				</section>
 			</div>
 		</div>
+		<!--产品评论的底部begin-->
+		<footer class="footer footerInner clearfix" title="加上hide，就会显示原来的footer" style="height:auto;">
+			<textarea class="commentInt textarea floatleft" style="height:15px;min-height: 15px;" placeholder=""></textarea>
+			<a class="btnSend floatleft">发 送</a>
+		</footer>
+		<!--产品评论的底部over-->
 	</body>
 </html>
