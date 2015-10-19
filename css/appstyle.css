@@ -114,6 +114,7 @@ label.checkbox,label.radio,label.text{padding-left:4px;vertical-align:top;}
 .strong{font-weight: bold;}
 .width-auto{width: auto!important;}
 .opacityMask{ -webkit-filter: grayscale(1); opacity: 0.7;}
+.inputList li.opacityMask{opacity:0.4;}
 /*clear*/
 .clear{clear:both;line-height:0;height:0;font-size:0;}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
