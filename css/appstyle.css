@@ -1,7 +1,7 @@
 /*reset*/
 html{color:#333;}
 body{font-size:12px;line-height:1.8em;font-family:Tahoma,Arial;background:#eee;position: relative;}
-/*html,body{height:100%;}*/
+html,body{height:100%;}
 body, div, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, th, td, dl, dt, dd,pre{margin:0;padding:0;}
 table{border-collapse:collapse;border-spacing:0;}
 img{border:none;}
@@ -438,7 +438,7 @@ margin:-11px 0 0 -11px;-webkit-transform:rotate(0deg);transition:0.3s;-webkit-tr
 /*微信端适配*/
 .shareBody{overflow:hidden;}
 .wechat{position:relative;}
-.wechat .main{position: absolute;width:100%;top:0;bottom:50px;overflow:hidden;overflow-y: auto;}
+.wechat .main{width:100%;top:0;padding-bottom:60px;overflow:hidden;overflow-y: auto;}
 .bottomPopW{width:100%;background:#e7e6eb;position:fixed;left:0;bottom:-220px;transition:0.2s;-webkit-transition:0.2s;}
 .bottomPopW.show{bottom:0;transition:0.2s;-webkit-transition:0.2s;z-index:100;}
 .bottomPopB{background:#fff;transition:0.2s;-webkit-transition:0.2s;}
