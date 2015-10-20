@@ -49,7 +49,7 @@ a:hover .icon-4{background-position:-40px -443px;}
 .page4{position: relative;}
 .page4 .top_bg{width:100%;position: absolute;top:0px;bottom:0px;z-index:-1;}
 .page4 .top_bg img{max-width:1300px;}
-
+.mask_p{width:188px;height:615px;position:absolute;z-index:3;top:9px;right:57px;}
 
 
 
