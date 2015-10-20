@@ -52,9 +52,16 @@
 			</section>
 		</div>
 		<!--产品评论的底部begin-->
-		<footer class="footer footerInner clearfix">
+		<footer class="footer footerInner clearfix" style="height: auto;">
 			<input type="text" class="commentInt" placeholder="" />
 		</footer>
 		<!--产品评论的底部over-->
+		<script type="text/javascript" src="../js/jquery.js" ></script>
+		<script type="text/javascript" src="../js/autosize.js" ></script>
+		<script>
+			$(function(){
+				autosize(document.querySelectorAll('.commentInt'));
+			});
+		</script>
 	</body>
 </html>
