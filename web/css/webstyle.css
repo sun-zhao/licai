@@ -11,7 +11,7 @@ body{overflow-y: auto;height:auto;}
 .imglist{width:999px;height:534px;position: relative;}
 .imglist li{float: left;}
 .page,.page_2{position: absolute;width:100%;bottom:0;}
-.page_2{bottom:40px;left:30%;}
+.page_2{bottom:40px;left: 0;}
 .page dd,.page_2 dd{display:inline-block;width:14px;height:14px;background: url("../img/icon.png") -40px 0;cursor: pointer;margin:0 5px;}
 .page dd.current,.page_2 dd.current{background-position:-40px -14px;}
 .banner{overflow: hidden;padding:90px 0;}
