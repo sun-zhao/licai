@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1edf22b-960e-4c0d-8412-3fdbab7f6078" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品.html" afterPath="$PROJECT_DIR$/view/产品详情-添加-关联/添加产品.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/appstyle.css" afterPath="$PROJECT_DIR$/css/appstyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/分享页面.html" afterPath="$PROJECT_DIR$/wechat/分享页面.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wechat/新朋友.html" afterPath="$PROJECT_DIR$/wechat/新朋友.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view/产品详情-添加-关联/理财室-在售.html" afterPath="$PROJECT_DIR$/view/产品详情-添加-关联/理财室-在售.html" />
     </list>
     <ignored path="licai.iws" />
     <ignored path=".idea/workspace.xml" />
