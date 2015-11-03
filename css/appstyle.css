@@ -406,7 +406,7 @@ p.txt{line-height:20px;padding-bottom:5px;}
 .ulBg.detail li:first-child{height:45px;}
 .ulBg.detail li:first-child span.lable{width:90%;}
 .ulBg.detail li:first-child span.Profit{background:#fff;height:45px;line-height: 45px;color:#666;font-size:16px;
-position: absolute;right:0;top:0;padding:0 10px;}
+position: absolute;right:0;top:0;padding:0 10px;color:#fc7864;padding-left:20px;}
 
 .imgDetail{padding:0 10px;text-align: center;}
 .imgDetail p{padding:0 10px 10px 0;}
