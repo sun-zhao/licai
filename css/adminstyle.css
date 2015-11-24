@@ -127,12 +127,14 @@ a.color-info:hover{text-decoration: underline;}
 .icon-down{background-image:url("../admin_img/icon-down.jpg");vertical-align: -2px;}
 .up{color:#8fc31f;}
 .down{color:#e66a6a;}
-
-
-
-
-
-
+.file{width:80px;height:30px;position: relative;}
+.file input{width:90px;height:40px;text-indent: -1000px;font-size:0;position: absolute;top:0;left:0;cursor: pointer;}
+.files{margin-left:60px;}
+.one{float: left;margin-right:10px;}
+.one,.one img{width:150px;height:150px;position: relative;}
+.one .progress{width:120px;height:5px;position: absolute;top:50%;left:50%;margin:-2px 0 0 -60px;background: #bbb;z-index:2;border-radius:2px;opacity: 0.9;}
+.one .progress .progress-in{height:5px;position: absolute;top:0;left:0;background:#16c1f3;transition: 0.3s;}
+.one .off{width:20px;height: 20px;line-height: 20px;text-align: center;color: #fff;background: red;font-size: 18px;position:absolute;top:0;right:0;}
 
 
 
