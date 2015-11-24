@@ -46,13 +46,6 @@
                         <option>信托基金</option>
                     </select>
                 </p>
-                <div class="mart20 clearfix">
-                    <span class="font14 floatleft">描述</span>
-                    <div class="textArea">
-                        <textarea></textarea>
-                        <div class="textBt alignright"><a href="#" class="btn marr10 mart5">使用图片</a></div>
-                    </div>
-                </div>
             </div>
             <div class="mart20 marr20 marl20">
                 <table class="tableInt">
@@ -226,12 +219,47 @@
                 </table>
                 <p><a href="#" class="btn mart20">新建产品详情</a></p>
             </div>
+            <div class="mainTop mart10 p-bt20">
+                <div class="mart20 clearfix">
+                    <span class="font14 floatleft">描述</span>
+                    <div class="textArea has-error">
+                        <textarea></textarea>
+                        <label class="control-label">描述描述描述描述</label>
+                        <div class="textBt alignright clearfix">
+                            <div class="file floatleft marl10">
+                                <a href="#" class="btn  mart5">使用图片</a>
+                                <input type="file">
+                            </div>
+                            <a href="#" class="btn btn-fb marl20 mart5 floatleft">发 布</a>
+                        </div>
+                    </div>
+                </div>
+                <!--上传的附件begin-->
+                <div class="files mart10 clearfix">
+                    <div class="one">
+                        <div class="progress"><div class="progress-in" style="width:70%;"></div></div>
+                        <span><img src="../admin_img/2.jpg"></span>
+                        <a href="#" class="off">╳</a>
+                    </div>
+                    <div class="one">
+                        <div class="progress"><div class="progress-in" style="width:70%;"></div></div>
+                        <span><img src="../admin_img/2.jpg"></span>
+                        <a href="#" class="off">╳</a>
+                    </div>
+                    <div class="one">
+                        <div class="progress"><div class="progress-in" style="width:70%;"></div></div>
+                        <span><img src="../admin_img/2.jpg"></span>
+                        <a href="#" class="off">╳</a>
+                    </div>
+                </div>
+                <!--上传的附件over-->
+            </div>
         </div>
     </div>
     <!--right bar over-->
-    <div class="mask"></div>
+    <div class="mask" style="display: none;"></div>
     <!--添加成功弹出begin-->
-    <div class="pop">
+    <div class="pop" style="display: none;">
         <div class="popInner">
             <p class="font28 aligncenter success"><img src="../admin_img/ok.jpg"  class="marr10">发布成功！</p>
             <p class="aligncenter color-a mart30">您的产品已成功发布，您可以到产品管理中查看</p>
