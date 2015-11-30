@@ -106,7 +106,17 @@ a.color-info:hover{text-decoration: underline;}
 
 .friend_list2{position: relative;top:0;left:0;overflow: hidden;}
 .friend_list2 .personBoard{width:46%;float: left;border:1px solid #d9d9d9;margin:20px 0 0 20px;}
-
+.txt_list .personBoard{height:140px;overflow-y: auto;cursor: default;}
+.txt_list .personBoard .txt-bt div{width:50%;}
+.txt_list .personBoard .txt-bt div img{width:100px;height:80px;}
+pre {
+	margin:0;
+    white-space: pre-wrap; /* css-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
 @font-face {
     font-family: 'din';
     src: url('din-regularalternate-webfont.eot');
