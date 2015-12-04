@@ -1,11 +1,15 @@
 body{overflow-y: auto;height:auto;}
 .page1,.page2,.page3{position: relative;}
-.page1{padding:50px 0;height:722px;z-index: 1111;}
+.page1{padding:50px 0;z-index: 1111;}
 .page2{background:#812990;padding:100px 0;}
 .page3{background:#f8f8fa;}
 .content{width:1000px;margin:0 auto;}
 .page2 .content img{width:90%;max-width: 1000px;}
 .top_bg img,.page3 img{max-width:100%;}
+.top_bg{text-align: center;}
+.top_bg img{width: 80%;}
+.login-btn{width:116px;height:36px;line-height:36px;border:2px solid #737272;border-radius:30px;position: absolute;top:20px;right:20px;color:#686868;}
+.login-btn:hover{opacity: 0.8;}
 .layout{position: absolute;top:50px;left:0;right:0;bottom:50px;}
 .imgShow{width:440px;height:752px;background: url("../img/phone.png");position:relative;}
 .imgBox{width:302px;height:534px;overflow: hidden;position: absolute;top:77px;left:71px;}
