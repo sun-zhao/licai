@@ -1,6 +1,6 @@
 body{overflow-y: auto;height:auto;}
 .page1,.page2,.page3{position: relative;}
-.page1{padding:50px 0;z-index: 1111;}
+.page1{padding:50px 0;z-index: 1111;height:720px;}
 .page2{background:#812990;padding:100px 0;}
 .page3{background:#f8f8fa;}
 .content{width:1000px;margin:0 auto;}
